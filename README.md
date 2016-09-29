@@ -1,31 +1,27 @@
 **WIP**
 
-
 ## Installation
 
 `npm install grad-factions --save`
 
 ## Configuration
 
-If not already set, prepend `#define MODULE_DIRECTORY node_modules`
-
-You may also set some options like this
+You *may* set some of those options. They may or may have no effect, depending on the chosen factions.
 
 ```
-//#define NIGHTVISION                                                           //Wenn Spieler Nightvision erhalten sollen, Kommentarzeichen (//) entfernen
-//#define GUNLIGHTS                                                             //Wenn Spieler Waffenlampen erhalten sollen, Kommentarzeichen (//) entfernen
-//#define LASERS                                                                //Wenn Spieler Waffenlaser erhalten sollen, Kommentarzeichen (//) entfernen
-//#define SUPPRESSORS                                                           //Wenn Spieler Schalldämpfer erhalten sollen, Kommentarzeichen (//) entfernen
+#define NIGHTVISION  // equip night vision goggles
+#define GUNLIGHTS    // equip gun lights
+#define LASERS       // equip weapon laser
+#define SUPPRESSORS  // equip suppressors
 
 ```
-
 Below, add this:
-
 ```
-#include "MODULE_DIRECTORY\grad-factions\loadouts.hpp"
+#define MODULES_DIRECTORY node_modules
+#include "MODULES_DIRECTORY\grad-factions\loadouts.hpp"
 ```
 
-You're done. One last thing you will have to do: define which set of factions should be used.
+You're nearly done. One last thing you will have to do: define which set of factions should actually be used.
 Somewhere in your init.sqf, for example:
 
 `GRAD_Loadout_Chosen_Prefix = "BWFleck";`
@@ -41,14 +37,8 @@ These factions are available:
 *   "RUEMR"           OPFOR         Russian MSV EMR-Summer
 *   "ModerateRebels"  INDEPENDENT   Mittelmäßig bewaffnete, halbzivile Rebellen
 
-
-
-/*  Um Standardloadouts zu erhalten müssen im Editor Vanillaeinheiten platziert werden, oder die vorplatzierten Einheiten genutzt werden.
-*   Die folgenden Kategorien sind zu benutzen:
-*   Blufor:         NATO >> Men
-*   Opfor:          CSAT >> Men
-*   Independent:    AAF >> Men
-*/
+**NOTE**: loadouts are defined for vanilla NATO/CSAT/AAF units only – they may or may not work for other units.
+As units differ mostly in their loadouts (which is exchanged completely anyway) this should not matter much.
 
 
 /*  Von den angegebenen Kategorien haben die folgenden Einheiten ein Standardloadout:
