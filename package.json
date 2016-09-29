@@ -1,0 +1,16 @@
+{
+    "name": "grad-factions",
+    "contributors": [
+        {
+            "name": "Fusselwurm"
+        },
+        {
+            "name": "McDiod"
+        },
+        {
+            "name": "Nomisum"
+        }
+    ],
+    "description": "Various faction loadouts for grad-loadout",
+    "version": "0.1.0"
+}

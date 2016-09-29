@@ -1,15 +1,37 @@
-_loadoutFaction = "BWFleck";                                                    //Partei, dessen Standardloadout die Spieler bekommen
-                                                                                //Wenn _loadoutFaction == "" werden keine Loadouts verteilt und Missionsersteller kann eigene Loadouts über den Editor vergeben (Achtung: nicht respawnsicher).
+**WIP**
 
+
+## Installation
+
+`npm install grad-factions --save`
+
+## Configuration
+
+If not already set, prepend `#define MODULE_DIRECTORY node_modules`
+
+You may also set some options like this
+
+```
 //#define NIGHTVISION                                                           //Wenn Spieler Nightvision erhalten sollen, Kommentarzeichen (//) entfernen
 //#define GUNLIGHTS                                                             //Wenn Spieler Waffenlampen erhalten sollen, Kommentarzeichen (//) entfernen
 //#define LASERS                                                                //Wenn Spieler Waffenlaser erhalten sollen, Kommentarzeichen (//) entfernen
 //#define SUPPRESSORS                                                           //Wenn Spieler Schalldämpfer erhalten sollen, Kommentarzeichen (//) entfernen
 
+```
 
+Below, add this:
 
+```
+#include "MODULE_DIRECTORY\grad-factions\loadouts.hpp"
+```
 
-/*  Die folgenden Parteien sind verfügbar:
+You're done. One last thing you will have to do: define which set of factions should be used.
+Somewhere in your init.sqf, for example:
+
+`GRAD_Loadout_Chosen_Prefix = "BWFleck";`
+
+These factions are available:
+
 *   "BWFleck"         BLUFOR        Bundeswehr Flecktarn
 *   "BWTrop"          BLUFOR        Bundeswehr Tropentarn
 *   "USOCP"           BLUFOR        US Army OCP
@@ -18,7 +40,7 @@ _loadoutFaction = "BWFleck";                                                    
 *   "RUFlora"         OPFOR         Russian MSV Flora
 *   "RUEMR"           OPFOR         Russian MSV EMR-Summer
 *   "ModerateRebels"  INDEPENDENT   Mittelmäßig bewaffnete, halbzivile Rebellen
-*/
+
 
 
 /*  Um Standardloadouts zu erhalten müssen im Editor Vanillaeinheiten platziert werden, oder die vorplatzierten Einheiten genutzt werden.
@@ -49,9 +71,3 @@ _loadoutFaction = "BWFleck";                                                    
 *   Squad Leader                              Truppführer                                       Truppführer
 *   Team Leader                               Teamleader                                        Gruppenführer und Zugführer
 */
-
-
-/*  Eigene Loadouts für GRAD-Loadout definieren:
-*   Die Standardloadouts können Ordner loadouts ergänzt werden.
-*   Die neuen Loadouts nehmen wir gerne ins Template mit auf, dann haben alle etwas davon :)
-*   https://github.com/gruppe-adler/grad-factions
