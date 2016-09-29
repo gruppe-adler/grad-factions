@@ -1,8 +1,18 @@
 **WIP**
 
+## Prerequisites
+
+Highly recommended: `>= npm-3.x`, which comes with NodeJS 6.x. Don't use older versions!
+
+Alternatively, you can install `grad-factions` manually. You will then also need `grad-loadout`.
+
 ## Installation
 
 `npm install grad-factions --save`
+
+## Update
+
+change the desired version number in your mission's `package.json`, and do `npm install`
 
 ## Configuration
 
