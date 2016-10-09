@@ -40,7 +40,7 @@ class BWFleck {
     nvgoggles = NVITEM;
     items[] = {};
     magazines[] = {};
-
+  };
     class Type {
       //Rifleman
       class B_Soldier_F {
@@ -243,7 +243,6 @@ class BWFleck {
           LIST_2("1Rnd_SmokeBlue_Grenade_shell")
         };
       };
-    };
   };
 
   class Rank {
