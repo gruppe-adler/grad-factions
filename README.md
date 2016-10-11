@@ -71,3 +71,6 @@ As units differ mostly in their loadouts (which is exchanged completely anyway) 
 *   Squad Leader                              Truppführer                                       Truppführer
 *   Team Leader                               Teamleader                                        Gruppenführer und Zugführer
 */
+
+
+http://www.gruppe-adler.de
