@@ -13,5 +13,5 @@ class Loadouts {
 };
 
 class CfgFunctions {
-    #include "..\node_modules\grad-loadout\CfgFunctions.hpp"
+    #include "..\grad-loadout\CfgFunctions.hpp"
 };
