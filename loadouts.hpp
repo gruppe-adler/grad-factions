@@ -11,7 +11,3 @@ class Loadouts {
     #include "factions\RUS.hpp"
     #include "factions\Rebels.hpp"
 };
-
-class CfgFunctions {
-    #include "..\grad-loadout\CfgFunctions.hpp"
-};

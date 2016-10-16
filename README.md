@@ -29,6 +29,10 @@ Below, add this:
 ```
 #define MODULES_DIRECTORY node_modules
 #include "MODULES_DIRECTORY\grad-factions\loadouts.hpp"
+
+class CfgFunctions {
+    #include "MODULES_DIRECTORY\grad-loadout\CfgFunctions.hpp"
+};
 ```
 
 You're nearly done. One last thing you will have to do: define which set of factions should actually be used.
