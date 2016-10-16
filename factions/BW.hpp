@@ -27,14 +27,11 @@ class BWFleck {
         class Blufor {
             uniform = "ARC_GER_Flecktarn_Uniform";
             vest = "ARC_GER_Flecktarn_Plate_Carrier";
-            backpack = "";
             headgear = "ARC_GER_Flecktarn_Mich";
             primaryWeapon = "arifle_SPAR_01_blk_F";
-            primaryWeaponAttachments[] = {
-                "FHQ_optic_HWS_G33",
-                LLITEM,
-                SUPPRESSORITEM
-            };
+            primaryWeaponOptics = "FHQ_optic_HWS_G33";
+            primaryWeaponPointer = LLITEM;
+            primaryWeaponMuzzle = SUPPRESSORITEM;
             handgunWeapon = "hgun_ACPC2_F";
             binoculars = "Binocular";
             map = "ItemMap";
@@ -43,8 +40,6 @@ class BWFleck {
             gps = "ItemGPS";
             radio = "tf_anprc152";
             nvgoggles = NVITEM;
-            items[] = {};
-            magazines[] = {};
         };
     };
     class Type {
@@ -105,11 +100,7 @@ class BWFleck {
         //Autorifleman
         class B_soldier_AR_F: B_Soldier_F {
             primaryWeapon = "arifle_SPAR_02_blk_F";
-            primaryWeaponAttachments[] = {
-                "FHQ_optic_HWS_G33",
-                "bipod_01_F_blk",
-                LLITEM
-            };
+            primaryWeaponUnderbarrel ="bipod_01_F_blk";
             handgunWeapon = "";
             backpack = "ARC_GER_Kitbag_compact_Flecktarn";
             addItemsToBackpack[] = {
@@ -184,11 +175,8 @@ class BWFleck {
         //Marksman
         class B_soldier_M_F: B_Soldier_F {
             primaryWeapon = "arifle_SPAR_03_blk_F";
-            primaryWeaponAttachments[] = {
-                "optic_DMS",
-                "bipod_01_F_blk",
-                LLITEM
-            };
+            primaryWeaponOptics ="optic_DMS";
+            primaryWeaponUnderbarrel ="bipod_01_F_blk";
             binoculars = "ACE_VectorDay";
             addItemsToVest[] = {
                 LIST_2("SmokeShell"),
@@ -279,11 +267,7 @@ class BWTrop: BWFleck {
             vest = "ARC_GER_Tropentarn_Plate_Carrier";
             headgear = "ARC_GER_Tropentarn_Mich";
             primaryWeapon = "arifle_SPAR_01_snd_F";
-            primaryWeaponAttachments[] = {
-                "FHQ_optic_HWS_G33_tan",
-                LLITEM,
-                SUPPRESSORITEM
-            };
+            primaryWeaponOptics = "FHQ_optic_HWS_G33_tan";
         }
     };
     class Type: Type {
@@ -332,10 +316,6 @@ class BWTrop: BWFleck {
 
         class B_soldier_M_F: B_soldier_M_F {
             primaryWeapon = "arifle_SPAR_03_snd_F";
-            primaryWeaponAttachments[] = {
-                "optic_DMS",
-                "bipod_01_F_snd"
-            };
         };
 
         class B_soldier_AA_F: B_soldier_AA_F {

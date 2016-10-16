@@ -5,6 +5,7 @@
 class Loadouts {
     baseDelay = 1;
     handleRadios = 1;
+    resetLoadout = 1; // start with empty loadouts instead of modifying existing loadout
 
     #include "factions\BW.hpp"
     #include "factions\US.hpp"
