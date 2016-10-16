@@ -29,7 +29,9 @@ class RUFlora {
     backpack = "";
     headgear = "rhs_6b26";
     primaryWeapon = "rhs_weap_ak74m";
-    primaryWeaponAttachments[] = {"rhs_acc_pkas", SUPPRESSORITEM, LLITEM};
+    primaryWeaponMuzzle = SUPPRESSORITEM;
+    primaryWeaponPointer = LLITEM;
+    primaryWeaponOptics = "rhs_acc_pkas";
     handgunWeapon = "rhs_weap_makarov_pm";
     binoculars = "Binocular";
     map = "ItemMap";
@@ -154,7 +156,9 @@ class RUFlora {
       //Marksman
       class O_Soldier_M_F: O_Soldier_F {
         primaryWeapon = "rhs_weap_svdp";
-        primaryWeaponAttachments[] = {"rhs_acc_pso1m21"};
+        primaryWeaponOptics = "rhs_acc_pso1m21";
+        primaryWeaponPointer = "";
+        primaryWeaponMuzzle = "";
         addItemsToVest[] = {
           LIST_2("rhs_mag_rgd5"),
           "rhs_mag_rdg2_white",

@@ -14,6 +14,6 @@
     "description": "Various faction loadouts for grad-loadout",
     "version": "0.1.5",
     "dependencies": {
-        "grad-loadout": "~4.0"
+        "grad-loadout": "~4.1"
     }
 }

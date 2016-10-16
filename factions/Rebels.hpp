@@ -29,7 +29,8 @@ class ModerateRebels {
     backpack = "";
     headgear = "";
     primaryWeapon = "rhs_weap_ak74m_2mag";
-    primaryWeaponAttachments[] = {SUPPRESSORITEM, LLITEM};
+    primaryWeaponMuzzle = SUPPRESSORITEM;
+    primaryWeaponPointer = LLITEM;
     handgunWeapon = "rhs_weap_makarov_pm";
     binoculars = "Binocular";
     map = "ItemMap";
@@ -38,8 +39,6 @@ class ModerateRebels {
     gps = "ItemGPS";
     radio = "tf_fadak";
     nvgoggles = NVITEM;
-    items[] = {};
-    magazines[] = {};
 
     class Type {
       //Rifleman
@@ -172,7 +171,7 @@ class ModerateRebels {
         vest = "V_TacChestrig_grn_F";
         goggles = "G_Bandanna_khk";
         primaryWeapon = "rhs_weap_m76";
-        primaryWeaponAttachments[] = {"rhs_acc_1p78"};
+        primaryWeaponOptics = "rhs_acc_1p78";
         addItemsToVest[] = {
           LIST_2("rhs_mag_rdg2_white"),
           LIST_12("rhsgref_10Rnd_792x57_m76")
@@ -230,14 +229,14 @@ class ModerateRebels {
         uniform = "U_I_C_Soldier_Para_2_F";
         vest = "V_TacVest_camo";
         primaryWeapon = "rhs_weap_ak74m";
-        primaryWeaponAttachments[] = {SUPPRESSORITEM, LLITEM, "rhs_acc_1p63"};
+        primaryWeaponOptics = "rhs_acc_1p63";
       };
 
       class I_Soldier_TL_F: I_Soldier_F {
         uniform = "U_BG_leader";
         vest = "V_TacVest_brn";
         primaryWeapon = "rhs_weap_ak74m";
-        primaryWeaponAttachments[] = {SUPPRESSORITEM, LLITEM, "rhs_acc_1p63"};
+        primaryWeaponOptics = "rhs_acc_1p63";
       };
     };
   };

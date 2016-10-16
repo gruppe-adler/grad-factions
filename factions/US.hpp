@@ -29,7 +29,9 @@ class USOCP {
     backpack = "";
     headgear = "rhsusf_ach_helmet_ocp";
     primaryWeapon = "rhs_weap_m4a1_blockII_bk";
-    primaryWeaponAttachments[] = {"FHQ_optic_HWS_G33", LLITEM, SUPPRESSORITEM};
+    primaryWeaponMuzzle = SUPPRESSORITEM;
+    primaryWeaponPointer = LLITEM;
+    primaryWeaponOptics = "FHQ_optic_HWS_G33";
     handgunWeapon = "rhsusf_weap_m9";
     binoculars = "Binocular";
     map = "ItemMap";
@@ -176,7 +178,10 @@ class USOCP {
       //Marksman
       class B_soldier_M_F: B_Soldier_F {
         primaryWeapon = "rhs_weap_sr25_ec";
-        primaryWeaponAttachments[] = {"optic_DMS", "bipod_01_F_blk", LLITEM};
+        primaryWeaponMuzzle = "";
+        primaryWeaponPointer = LLITEM;
+        primaryWeaponOptics = "optic_DMS";
+        primaryWeaponUnderbarrel = "bipod_01_F_blk"
         addItemsToVest[] = {
           LIST_2("HandGrenade"),
           LIST_2("SmokeShell"),
@@ -355,7 +360,7 @@ class USUCP: USOCP {
     backpack = "";
     headgear = "rhsusf_ach_helmet_ucp";
     primaryWeapon = "rhs_weap_m4a1_blockII_d";
-    primaryWeaponAttachments[] = {"FHQ_optic_HWS_G33_tan", LLITEM, SUPPRESSORITEM};
+    primaryWeaponOptics = "FHQ_optic_HWS_G33_tan";
     class Type: Type {
 
       class B_Soldier_F: B_Soldier_F {};
