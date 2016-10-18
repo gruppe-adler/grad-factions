@@ -23,28 +23,26 @@
 #endif
 
 class BWFleck {
-    class Side {
-        class Blufor {
-            uniform = "ARC_GER_Flecktarn_Uniform";
-            vest = "ARC_GER_Flecktarn_Plate_Carrier";
-            headgear = "ARC_GER_Flecktarn_Mich";
-            primaryWeapon = "arifle_SPAR_01_blk_F";
-            primaryWeaponOptics = "FHQ_optic_HWS_G33";
-            primaryWeaponPointer = LLITEM;
-            primaryWeaponMuzzle = SUPPRESSORITEM;
-            handgunWeapon = "hgun_ACPC2_F";
-            binoculars = "Binocular";
-            map = "ItemMap";
-            compass = "ItemCompass";
-            watch = "ItemWatch";
-            gps = "ItemGPS";
-            radio = "tf_anprc152";
-            nvgoggles = NVITEM;
-        };
+	class AllUnits {
+		uniform = "ARC_GER_Flecktarn_Uniform";
+		vest = "ARC_GER_Flecktarn_Plate_Carrier";
+		headgear = "ARC_GER_Flecktarn_Mich";
+		primaryWeapon = "arifle_SPAR_01_blk_F";
+		primaryWeaponOptics = "FHQ_optic_HWS_G33";
+		primaryWeaponPointer = LLITEM;
+		primaryWeaponMuzzle = SUPPRESSORITEM;
+		handgunWeapon = "hgun_ACPC2_F";
+		binoculars = "Binocular";
+		map = "ItemMap";
+		compass = "ItemCompass";
+		watch = "ItemWatch";
+		gps = "ItemGPS";
+		radio = "tf_anprc152";
+		nvgoggles = NVITEM;
     };
     class Type {
         //Rifleman
-        class B_Soldier_F {
+        class Soldier_F {
             addItemsToUniform[] = {
                 "ACE_MapTools",
                 "ACE_EarPlugs",
@@ -64,7 +62,7 @@ class BWFleck {
         };
 
         //Asst. Autorifleman
-        class B_soldier_AAR_F: B_Soldier_F {
+        class soldier_AAR_F: Soldier_F {
             backpack = "ARC_GER_Kitbag_compact_Flecktarn";
             addItemsToBackpack[] = {
                 LIST_2("150Rnd_556x45_Drum_Mag_F"),
@@ -73,7 +71,7 @@ class BWFleck {
         };
 
         //Asst. Gunner (HMG/GMG)
-        class B_support_AMG_F: B_Soldier_F {
+        class support_AMG_F: Soldier_F {
             backpack = "ARC_GER_Kitbag_compact_Flecktarn";
             addItemsToBackpack[] = {
                 LIST_2("rhsusf_100Rnd_762x51_m80a1epr"),
@@ -82,7 +80,7 @@ class BWFleck {
         };
 
         //Asst. Missile Specialist (AA)
-        class B_soldier_AAA_F: B_Soldier_F {
+        class soldier_AAA_F: Soldier_F {
             backpack = "ARC_GER_Backpack_Carryall_Flecktarn";
             addItemsToBackpack[] = {
                 LIST_2("rhs_fim92_mag")
@@ -90,7 +88,7 @@ class BWFleck {
         };
 
         //Asst. Missile Specialist (AT)
-        class B_soldier_AAT_F: B_Soldier_F {
+        class soldier_AAT_F: Soldier_F {
             backpack = "ARC_GER_Backpack_Carryall_Flecktarn";
             addItemsToBackpack[] = {
                 LIST_2("rhs_fgm148_magazine_AT")
@@ -98,7 +96,7 @@ class BWFleck {
         };
 
         //Autorifleman
-        class B_soldier_AR_F: B_Soldier_F {
+        class soldier_AR_F: Soldier_F {
             primaryWeapon = "arifle_SPAR_02_blk_F";
             primaryWeaponUnderbarrel ="bipod_01_F_blk";
             handgunWeapon = "";
@@ -115,7 +113,7 @@ class BWFleck {
         };
 
         //Combat Life Saver
-        class B_medic_F: B_Soldier_F {
+        class medic_F: Soldier_F {
             backpack = "ARC_GER_Backpack_Flecktarn";
             addItemsToBackpack[] = {
                 LIST_5("ACE_bloodIV"),
@@ -134,7 +132,7 @@ class BWFleck {
         };
 
         //Explosive Specialist
-        class B_soldier_exp_F: B_Soldier_F {
+        class soldier_exp_F: Soldier_F {
             backpack = "ARC_GER_Kitbag_compact_Flecktarn";
             addItemsToBackpack[] = {
                 "ACE_Clacker",
@@ -145,7 +143,7 @@ class BWFleck {
         };
 
         //Grenadier
-        class B_Soldier_GL_F: B_Soldier_F {
+        class Soldier_GL_F: Soldier_F {
             primaryWeapon = "arifle_SPAR_01_GL_blk_F";
             addItemsToVest[] = {
                 LIST_2("HandGrenade"),
@@ -158,7 +156,7 @@ class BWFleck {
         };
 
         //Heavy Gunner
-        class B_HeavyGunner_F: B_Soldier_F {
+        class HeavyGunner_F: Soldier_F {
             primaryWeapon = "rhs_weap_m240G";
             handgunWeapon = "";
             backpack = "ARC_GER_Kitbag_compact_Flecktarn";
@@ -173,7 +171,7 @@ class BWFleck {
         };
 
         //Marksman
-        class B_soldier_M_F: B_Soldier_F {
+        class soldier_M_F: Soldier_F {
             primaryWeapon = "arifle_SPAR_03_blk_F";
             primaryWeaponOptics ="optic_DMS";
             primaryWeaponUnderbarrel ="bipod_01_F_blk";
@@ -186,7 +184,7 @@ class BWFleck {
         };
 
         //Missile Specialist (AA)
-        class B_soldier_AA_F: B_Soldier_F {
+        class soldier_AA_F: Soldier_F {
             secondaryWeapon = "rhs_weap_fim92";
             backpack = "ARC_GER_Backpack_Carryall_Flecktarn";
             addItemsToBackpack[] = {
@@ -195,7 +193,7 @@ class BWFleck {
         };
 
         //Missile Specialist (AT)
-        class B_soldier_AT_F: B_Soldier_F {
+        class soldier_AT_F: Soldier_F {
             secondaryWeapon = "rhs_weap_fgm148";
             backpack = "ARC_GER_Backpack_Carryall_Flecktarn";
             addItemsToBackpack[] = {
@@ -204,7 +202,7 @@ class BWFleck {
         };
 
         //Repair Specialist
-        class B_soldier_repair_F: B_Soldier_F {
+        class soldier_repair_F: Soldier_F {
             backpack = "ARC_GER_Backpack_compact_Flecktarn";
             addItemsToBackpack[] = {
                 "ToolKit",
@@ -213,12 +211,12 @@ class BWFleck {
         };
 
         //Rifleman (AT)
-        class B_soldier_LAT_F: B_Soldier_F {
+        class soldier_LAT_F: Soldier_F {
             secondaryWeapon = "rhs_weap_M136";
         };
 
         //Squad Leader
-        class B_Soldier_SL_F: B_Soldier_F {
+        class Soldier_SL_F: Soldier_F {
             backpack = "tf_rt1523g_big_bwmod";
             addItemsToBackpack[] = {
                 LIST_2("SmokeShellBlue"),
@@ -232,7 +230,7 @@ class BWFleck {
         };
 
         //Team Leader
-        class B_Soldier_TL_F: B_Soldier_F {
+        class Soldier_TL_F: Soldier_F {
             primaryWeapon = "arifle_SPAR_01_GL_blk_F";
             addItemsToVest[] = {
                 LIST_2("HandGrenade"),
@@ -261,35 +259,33 @@ class BWFleck {
 #endif
 
 class BWTrop: BWFleck {
-    class Side: Side {
-        class Blufor: Blufor {
-            uniform = "ARC_GER_Tropentarn_Uniform";
-            vest = "ARC_GER_Tropentarn_Plate_Carrier";
-            headgear = "ARC_GER_Tropentarn_Mich";
-            primaryWeapon = "arifle_SPAR_01_snd_F";
-            primaryWeaponOptics = "FHQ_optic_HWS_G33_tan";
-        }
-    };
+	class AllUnits: AllUnits {
+		uniform = "ARC_GER_Tropentarn_Uniform";
+		vest = "ARC_GER_Tropentarn_Plate_Carrier";
+		headgear = "ARC_GER_Tropentarn_Mich";
+		primaryWeapon = "arifle_SPAR_01_snd_F";
+		primaryWeaponOptics = "FHQ_optic_HWS_G33_tan";
+	};
     class Type: Type {
-        class B_Soldier_F: B_Soldier_F {};
+        class Soldier_F: Soldier_F {};
 
-        class B_soldier_AAR_F: B_soldier_AAR_F {
+        class soldier_AAR_F: soldier_AAR_F {
             backpack = "ARC_GER_Kitbag_compact_Tropentarn";
         };
 
-        class B_support_AMG_F: B_support_AMG_F {
+        class support_AMG_F: support_AMG_F {
             backpack = "ARC_GER_Kitbag_compact_Tropentarn";
         };
 
-        class B_soldier_AAA_F: B_soldier_AAA_F {
+        class soldier_AAA_F: soldier_AAA_F {
             backpack = "ARC_GER_Backpack_Carryall_Tropentarn";
         };
 
-        class B_soldier_AAT_F: B_soldier_AAT_F {
+        class soldier_AAT_F: soldier_AAT_F {
             backpack = "ARC_GER_Backpack_Carryall_Tropentarn";
         };
 
-        class B_soldier_AR_F: B_soldier_AR_F {
+        class soldier_AR_F: soldier_AR_F {
             primaryWeapon = "arifle_SPAR_02_snd_F";
             primaryWeaponAttachments[] = {
                 "FHQ_optic_HWS_G33_tan",
@@ -298,45 +294,45 @@ class BWTrop: BWFleck {
             backpack = "ARC_GER_Kitbag_compact_Tropentarn";
         };
 
-        class B_medic_F: B_medic_F {
+        class medic_F: medic_F {
             backpack = "ARC_GER_Backpack_Tropentarn";
         };
 
-        class B_soldier_exp_F: B_soldier_exp_F {
+        class soldier_exp_F: soldier_exp_F {
             backpack = "ARC_GER_Kitbag_compact_Tropentarn";
         };
 
-        class B_Soldier_GL_F: B_Soldier_GL_F {
+        class Soldier_GL_F: Soldier_GL_F {
             primaryWeapon = "arifle_SPAR_01_GL_snd_F";
         };
 
-        class B_HeavyGunner_F: B_HeavyGunner_F {
+        class HeavyGunner_F: HeavyGunner_F {
             backpack = "ARC_GER_Kitbag_compact_Tropentarn";
         };
 
-        class B_soldier_M_F: B_soldier_M_F {
+        class soldier_M_F: soldier_M_F {
             primaryWeapon = "arifle_SPAR_03_snd_F";
         };
 
-        class B_soldier_AA_F: B_soldier_AA_F {
+        class soldier_AA_F: soldier_AA_F {
             backpack = "ARC_GER_Backpack_Carryall_Tropentarn";
         };
 
-        class B_soldier_AT_F: B_soldier_AT_F {
+        class soldier_AT_F: soldier_AT_F {
             backpack = "ARC_GER_Backpack_Carryall_Tropentarn";
         };
 
-        class B_soldier_repair_F: B_soldier_repair_F {
+        class soldier_repair_F: soldier_repair_F {
             backpack = "ARC_GER_Kitbag_compact_Tropentarn";
         };
 
-        class B_soldier_LAT_F: B_soldier_LAT_F {};
+        class soldier_LAT_F: soldier_LAT_F {};
 
-        class B_Soldier_SL_F: B_Soldier_SL_F {
+        class Soldier_SL_F: Soldier_SL_F {
             backpack = "tf_rt1523g_big_bwmod_tropen";
         };
 
-        class B_Soldier_TL_F: B_Soldier_TL_F {
+        class Soldier_TL_F: Soldier_TL_F {
             primaryWeapon = "arifle_SPAR_01_GL_snd_F";
         };
     };

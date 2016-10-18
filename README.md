@@ -38,7 +38,10 @@ class CfgFunctions {
 You're nearly done. One last thing you will have to do: define which set of factions should actually be used.
 Somewhere in your init.sqf, for example:
 
-`GRAD_Loadout_Chosen_Prefix = "BWFleck";`
+```
+["BLU_F", "BwFleck"] call GRAD_Loadout_fnc_FactionSetLoadout;
+["OPF_G_F", "ModerateRebels"] call GRAD_Loadout_fnc_FactionSetLoadout;
+```
 
 These factions are available:
 
@@ -53,7 +56,6 @@ These factions are available:
 
 **NOTE**: loadouts are defined for vanilla NATO/CSAT/AAF units only – they may or may not work for other units.
 As units differ mostly in their loadouts (which is exchanged completely anyway) this should not matter much.
-
 
 /*  Von den angegebenen Kategorien haben die folgenden Einheiten ein Standardloadout:
 *   Englisch:                                 Deutsch:                                          Funktion:

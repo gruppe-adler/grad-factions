@@ -23,27 +23,23 @@
 #endif
 
 class USOCP {
-    class Side {
-        class Blufor {
-            uniform = "rhs_uniform_cu_ocp";
-            vest = "rhsusf_iotv_ocp_Rifleman";
-            backpack = "";
-            headgear = "rhsusf_ach_helmet_ocp";
-            primaryWeapon = "rhs_weap_m4a1_blockII_bk";
-            primaryWeaponMuzzle = SUPPRESSORITEM;
-            primaryWeaponPointer = LLITEM;
-            primaryWeaponOptics = "FHQ_optic_HWS_G33";
-            handgunWeapon = "rhsusf_weap_m9";
-            binoculars = "Binocular";
-            map = "ItemMap";
-            compass = "ItemCompass";
-            watch = "ItemWatch";
-            gps = "ItemGPS";
-            radio = "tf_anprc152";
-            nvgoggles = NVITEM;
-            items[] = {};
-            magazines[] = {};
-        };
+    class AllUnits {
+        uniform = "rhs_uniform_cu_ocp";
+        vest = "rhsusf_iotv_ocp_Rifleman";
+        backpack = "";
+        headgear = "rhsusf_ach_helmet_ocp";
+        primaryWeapon = "rhs_weap_m4a1_blockII_bk";
+        primaryWeaponMuzzle = SUPPRESSORITEM;
+        primaryWeaponPointer = LLITEM;
+        primaryWeaponOptics = "FHQ_optic_HWS_G33";
+        handgunWeapon = "rhsusf_weap_m9";
+        binoculars = "Binocular";
+        map = "ItemMap";
+        compass = "ItemCompass";
+        watch = "ItemWatch";
+        gps = "ItemGPS";
+        radio = "tf_anprc152";
+        nvgoggles = NVITEM;
     };
     class Type {
         //Rifleman
@@ -246,17 +242,13 @@ class USOCP {
         };
     };
 };
-
-
 class USMPT: USOCP {
-    class Side {
-        class Blufor {
-            uniform = "rhs_uniform_FROG01_wd";
-            vest = "rhsusf_spc_rifleman";
-            backpack = "";
-            headgear = "rhsusf_mich_helmet_marpatwd";
-            primaryWeapon = "rhs_weap_m16a4_pmag";
-        };
+    class AllUnits {
+        uniform = "rhs_uniform_FROG01_wd";
+        vest = "rhsusf_spc_rifleman";
+        backpack = "";
+        headgear = "rhsusf_mich_helmet_marpatwd";
+        primaryWeapon = "rhs_weap_m16a4_pmag";
     };
     class Type: Type {
         class B_Soldier_F: B_Soldier_F {};
@@ -323,15 +315,13 @@ class USMPT: USOCP {
 #endif
 
 class USUCP: USOCP {
-    class Side {
-        class Blufor {
-            uniform = "rhs_uniform_cu_ucp";
-            vest = "rhsusf_iotv_ocp_Rifleman";
-            backpack = "";
-            headgear = "rhsusf_ach_helmet_ucp";
-            primaryWeapon = "rhs_weap_m4a1_blockII_d";
-            primaryWeaponOptics = "FHQ_optic_HWS_G33_tan";
-        };
+    class AllUnits {
+        uniform = "rhs_uniform_cu_ucp";
+        vest = "rhsusf_iotv_ocp_Rifleman";
+        backpack = "";
+        headgear = "rhsusf_ach_helmet_ucp";
+        primaryWeapon = "rhs_weap_m4a1_blockII_d";
+        primaryWeaponOptics = "FHQ_optic_HWS_G33_tan";
     };
     class Type: Type {
         class B_Soldier_F: B_Soldier_F {};
