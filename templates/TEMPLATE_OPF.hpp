@@ -39,8 +39,6 @@ class LOADOUTNAME {
     gps = "";
     radio = "";
     nvgoggles = NVITEM;
-    items[] = {};
-    magazines[] = {};
 
     class Type {
       //Rifleman
