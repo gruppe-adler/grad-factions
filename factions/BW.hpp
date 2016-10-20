@@ -26,6 +26,7 @@ class BWFleck {
 	class AllUnits {
 		uniform = "ARC_GER_Flecktarn_Uniform";
 		vest = "ARC_GER_Flecktarn_Plate_Carrier";
+		backpack = "";
 		headgear = "ARC_GER_Flecktarn_Mich";
 		primaryWeapon = "arifle_SPAR_01_blk_F";
 		primaryWeaponOptics = "FHQ_optic_HWS_G33";
