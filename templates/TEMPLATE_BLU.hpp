@@ -30,7 +30,8 @@ class LOADOUTNAME {
     backpack = "";
     headgear = "";
     primaryWeapon = "";
-    primaryWeaponAttachments[] = {"" ,LLITEM, SUPPRESSORITEM};
+    primaryWeaponMuzzle = SUPPRESSORITEM;
+    primaryWeaponPointer = LLITEM;
     handgunWeapon = "";
     binoculars = "";
     map = "";
