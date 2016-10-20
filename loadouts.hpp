@@ -6,9 +6,13 @@ class Loadouts {
     resetLoadout = 0; // start with empty loadouts instead of modifying existing loadout
 
 	class Faction {
-		#include "factions\BW.hpp"
-		#include "factions\US.hpp"
-		#include "factions\RUS.hpp"
-		#include "factions\Rebels.hpp"
+        #include "factions\BwFleck.hpp"
+        #include "factions\BwTrop.hpp"
+        #include "factions\ModerateRebels.hpp"
+        #include "factions\UsOCP.hpp"
+        #include "factions\UsMPT.hpp"
+        #include "factions\UsUCP.hpp"
+        #include "factions\RuFlora.hpp"
+        #include "factions\RuEMR.hpp"
 	};
 };
