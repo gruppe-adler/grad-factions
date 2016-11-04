@@ -1,3 +1,27 @@
+#ifdef NIGHTVISION
+  #define NVITEM "rhsusf_ANPVS_15"
+#else
+  #define NVITEM ""
+#endif
+
+#ifdef LASERS
+  #define LLITEM "rhsusf_acc_anpeq15_bk"
+#else
+  #define LLITEM ""
+#endif
+
+#ifdef GUNLIGHTS
+  #define LLITEM "rhsusf_acc_anpeq15_bk_light"
+#else
+  #define LLITEM
+#endif
+
+#ifdef SUPPRESSORS
+  #define SUPPRESSORITEM "rhsusf_acc_nt4_black"
+#else
+  #define SUPPRESSORITEM ""
+#endif
+
 class USMPT: USOCP {
     class AllUnits {
         uniform = "rhs_uniform_FROG01_wd";

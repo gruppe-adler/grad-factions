@@ -1,3 +1,27 @@
+#ifdef NIGHTVISION
+  #define NVITEM "NVGoggles_OPFOR"
+#else
+  #define NVITEM ""
+#endif
+
+#ifdef LASERS
+  #define LLITEM "rhs_acc_perst1ik"
+#else
+  #define LLITEM ""
+#endif
+
+#ifdef GUNLIGHTS
+  #define LLITEM "rhs_acc_2dpZenit"
+#else
+  #define LLITEM ""
+#endif
+
+#ifdef SUPPRESSORS
+  #define SUPPRESSORITEM "rhs_acc_tgpa"
+#else
+  #define SUPPRESSORITEM "rhs_acc_dtk"
+#endif
+
 class RUEMR: RUFlora {
     class AllUnits: AllUnits {
         uniform = "rhs_uniform_msv_emr";
