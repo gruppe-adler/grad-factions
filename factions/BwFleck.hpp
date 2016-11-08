@@ -66,8 +66,8 @@ class BWFleck {
         class soldier_AAR_F: Soldier_F {
             backpack = "ARC_GER_Kitbag_compact_Flecktarn";
             addItemsToBackpack[] = {
-                LIST_2("150Rnd_556x45_Drum_Mag_F"),
-                LIST_4("150Rnd_556x45_Drum_Mag_Tracer_F")
+                LIST_2("rhs_200rnd_556x45_M_SAW"),
+                "rhs_200rnd_556x45_T_SAW"
             };
         };
 
@@ -98,16 +98,15 @@ class BWFleck {
 
         //Autorifleman
         class soldier_AR_F: Soldier_F {
-            primaryWeapon = "arifle_SPAR_02_blk_F";
-            primaryWeaponUnderbarrel ="bipod_01_F_blk";
+            primaryWeapon = "rhs_weap_m249_pip_S";
             handgunWeapon = "";
             backpack = "ARC_GER_Kitbag_compact_Flecktarn";
             addItemsToBackpack[] = {
-                LIST_2("150Rnd_556x45_Drum_Mag_F"),
-                LIST_4("150Rnd_556x45_Drum_Mag_Tracer_F")
+                LIST_2("rhs_200rnd_556x45_M_SAW"),
+                "rhs_200rnd_556x45_T_SAW"
             };
             addItemsToVest[] = {
-                "150Rnd_556x45_Drum_Mag_F",
+                "rhsusf_100Rnd_556x45_soft_pouch",
                 LIST_2("HandGrenade"),
                 LIST_2("SmokeShell")
             };

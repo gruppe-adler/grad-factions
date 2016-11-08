@@ -50,9 +50,6 @@ class BWTrop: BWFleck {
         };
 
         class soldier_AR_F: soldier_AR_F {
-            primaryWeapon = "arifle_SPAR_02_snd_F";
-            primaryWeaponOptics ="FHQ_optic_HWS_G33_tan";
-            primaryWeaponUnderbarrel ="bipod_01_F_snd";
             backpack = "ARC_GER_Kitbag_compact_Tropentarn";
         };
 
