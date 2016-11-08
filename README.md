@@ -65,6 +65,7 @@ These factions are available (see also the `factions` directory):
 | RuFlora        |  Russian MSV Flora                           |
 | RuEMR          |  Russian MSV EMR-Summer                      |
 | ModerateRebels |  Mittelmäßig bewaffnete, halbzivile Rebellen |
+| Peshmerga      |  kurdische Streitkräfte, russische Waffen    |
 
 
 **HINT**: If you do not know which faction your editor-created units belong to, have a look into the [BI Community Wiki](https://community.bistudio.com/wiki/Arma_3_CfgVehicles_WEST)

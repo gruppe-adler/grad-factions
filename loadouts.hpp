@@ -9,6 +9,7 @@ class Loadouts {
         #include "factions\BwFleck.hpp"
         #include "factions\BwTrop.hpp"
         #include "factions\ModerateRebels.hpp"
+        #include "factions\Peshmerga.hpp"
         #include "factions\UsOCP.hpp"
         #include "factions\UsMPT.hpp"
         #include "factions\UsUCP.hpp"
