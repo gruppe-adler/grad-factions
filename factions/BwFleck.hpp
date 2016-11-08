@@ -240,8 +240,8 @@ class BWFleck {
                 LIST_8("rhs_mag_30Rnd_556x45_Mk318_Stanag"),
                 LIST_2("1Rnd_SmokeRed_Grenade_shell"),
                 LIST_2("1Rnd_SmokeGreen_Grenade_shell"),
-                LIST_2("1Rnd_SmokePurple_Grenade_shell"),
-                LIST_2("1Rnd_SmokeBlue_Grenade_shell")
+                LIST_2("1Rnd_SmokeBlue_Grenade_shell"),
+                LIST_2("1Rnd_HE_Grenade_shell")            
             };
         };
     };

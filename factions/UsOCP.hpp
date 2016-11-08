@@ -230,9 +230,9 @@ class USOCP {
                 LIST_2("rhsusf_mag_15Rnd_9x19_JHP"),
                 LIST_8("30Rnd_556x45_Stanag"),
                 LIST_2("1Rnd_SmokeRed_Grenade_shell"),
-                LIST_2("1Rnd_SmokeGreen_Grenade_shell"),
                 LIST_2("1Rnd_Smoke_Grenade_shell"),
-                LIST_2("1Rnd_SmokeBlue_Grenade_shell")
+                LIST_2("1Rnd_SmokeBlue_Grenade_shell"),
+                LIST_2("1Rnd_HE_Grenade_shell")
             };
         };
     };
