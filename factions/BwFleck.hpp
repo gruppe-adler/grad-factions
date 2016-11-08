@@ -28,7 +28,7 @@ class BWFleck {
 		vest = "ARC_GER_Flecktarn_Plate_Carrier";
 		backpack = "";
 		headgear = "ARC_GER_Flecktarn_Mich";
-		primaryWeapon = "arifle_SPAR_01_blk_F";
+		primaryWeapon = "rhs_weap_hk416d10";
 		primaryWeaponOptics = "FHQ_optic_HWS_G33";
 		primaryWeaponPointer = LLITEM;
 		primaryWeaponMuzzle = SUPPRESSORITEM;
@@ -58,7 +58,7 @@ class BWFleck {
                 LIST_2("HandGrenade"),
                 LIST_2("SmokeShell"),
                 LIST_2("rhsusf_mag_17Rnd_9x19_JHP"),
-                LIST_8("30Rnd_556x45_Stanag")
+                LIST_8("rhs_mag_30Rnd_556x45_Mk318_Stanag")
             };
         };
 
@@ -128,7 +128,7 @@ class BWFleck {
                 LIST_2("SmokeShellPurple"),
                 LIST_8("SmokeShell"),
                 LIST_2("rhsusf_mag_17Rnd_9x19_JHP"),
-                LIST_8("30Rnd_556x45_Stanag")
+                LIST_8("rhs_mag_30Rnd_556x45_Mk318_Stanag")
             };
         };
 
@@ -145,12 +145,12 @@ class BWFleck {
 
         //Grenadier
         class Soldier_GL_F: Soldier_F {
-            primaryWeapon = "arifle_SPAR_01_GL_blk_F";
+            primaryWeapon = "rhs_weap_hk416d10_m320";
             addItemsToVest[] = {
                 LIST_2("HandGrenade"),
                 LIST_2("SmokeShell"),
                 LIST_2("rhsusf_mag_17Rnd_9x19_JHP"),
-                LIST_8("30Rnd_556x45_Stanag"),
+                LIST_8("rhs_mag_30Rnd_556x45_Mk318_Stanag"),
                 LIST_8("1Rnd_HE_Grenade_shell"),
                 LIST_3("1Rnd_SmokeRed_Grenade_shell")
             };
@@ -173,14 +173,15 @@ class BWFleck {
 
         //Marksman
         class soldier_M_F: Soldier_F {
-            primaryWeapon = "arifle_SPAR_03_blk_F";
+            primaryWeapon = "rhs_weap_hk416d145";
             primaryWeaponOptics ="optic_DMS";
             primaryWeaponUnderbarrel ="bipod_01_F_blk";
             binoculars = "ACE_VectorDay";
             addItemsToVest[] = {
                 LIST_2("SmokeShell"),
                 LIST_2("rhsusf_mag_17Rnd_9x19_JHP"),
-                LIST_9("20Rnd_762x51_Mag")
+                LIST_9("rhs_mag_30Rnd_556x45_Mk262_Stanag"),
+                LIST_4("rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red")
             };
         };
 
@@ -232,12 +233,12 @@ class BWFleck {
 
         //Team Leader
         class Soldier_TL_F: Soldier_F {
-            primaryWeapon = "arifle_SPAR_01_GL_blk_F";
+            primaryWeapon = "rhs_weap_hk416d10_m320";
             addItemsToVest[] = {
                 LIST_2("HandGrenade"),
                 LIST_2("SmokeShell"),
                 LIST_2("rhsusf_mag_17Rnd_9x19_JHP"),
-                LIST_8("30Rnd_556x45_Stanag"),
+                LIST_8("rhs_mag_30Rnd_556x45_Mk318_Stanag"),
                 LIST_2("1Rnd_SmokeRed_Grenade_shell"),
                 LIST_2("1Rnd_SmokeGreen_Grenade_shell"),
                 LIST_2("1Rnd_SmokePurple_Grenade_shell"),

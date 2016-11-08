@@ -27,11 +27,11 @@ class BWTrop: BWFleck {
 		uniform = "ARC_GER_Tropentarn_Uniform";
 		vest = "ARC_GER_Tropentarn_Plate_Carrier";
 		headgear = "ARC_GER_Tropentarn_Mich";
-		primaryWeapon = "arifle_SPAR_01_snd_F";
-		primaryWeaponOptics = "FHQ_optic_HWS_G33_tan";
 	};
     class Type: Type {
-        class Soldier_F: Soldier_F {};
+        class Soldier_F: Soldier_F {
+
+        };
 
         class soldier_AAR_F: soldier_AAR_F {
             backpack = "ARC_GER_Kitbag_compact_Tropentarn";
@@ -65,7 +65,7 @@ class BWTrop: BWFleck {
         };
 
         class Soldier_GL_F: Soldier_GL_F {
-            primaryWeapon = "arifle_SPAR_01_GL_snd_F";
+
         };
 
         class HeavyGunner_F: HeavyGunner_F {
@@ -73,7 +73,7 @@ class BWTrop: BWFleck {
         };
 
         class soldier_M_F: soldier_M_F {
-            primaryWeapon = "arifle_SPAR_03_snd_F";
+
         };
 
         class soldier_AA_F: soldier_AA_F {
@@ -88,14 +88,16 @@ class BWTrop: BWFleck {
             backpack = "ARC_GER_Kitbag_compact_Tropentarn";
         };
 
-        class soldier_LAT_F: soldier_LAT_F {};
+        class soldier_LAT_F: soldier_LAT_F {
+
+        };
 
         class Soldier_SL_F: Soldier_SL_F {
             backpack = "tf_rt1523g_big_bwmod_tropen";
         };
 
         class Soldier_TL_F: Soldier_TL_F {
-            primaryWeapon = "arifle_SPAR_01_GL_snd_F";
+
         };
     };
 
