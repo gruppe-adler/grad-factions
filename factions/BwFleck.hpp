@@ -32,7 +32,7 @@ class BWFleck {
 		primaryWeaponOptics = "FHQ_optic_HWS_G33";
 		primaryWeaponPointer = LLITEM;
 		primaryWeaponMuzzle = SUPPRESSORITEM;
-		handgunWeapon = "hgun_ACPC2_F";
+		handgunWeapon = "rhsusf_weap_glock17g4";
 		binoculars = "Binocular";
 		map = "ItemMap";
 		compass = "ItemCompass";
@@ -57,7 +57,7 @@ class BWFleck {
             addItemsToVest[] = {
                 LIST_2("HandGrenade"),
                 LIST_2("SmokeShell"),
-                LIST_2("16Rnd_9x21_Mag"),
+                LIST_2("rhsusf_mag_17Rnd_9x19_JHP"),
                 LIST_8("30Rnd_556x45_Stanag")
             };
         };
@@ -127,7 +127,7 @@ class BWFleck {
                 LIST_2("HandGrenade"),
                 LIST_2("SmokeShellPurple"),
                 LIST_8("SmokeShell"),
-                LIST_2("16Rnd_9x21_Mag"),
+                LIST_2("rhsusf_mag_17Rnd_9x19_JHP"),
                 LIST_8("30Rnd_556x45_Stanag")
             };
         };
@@ -149,7 +149,7 @@ class BWFleck {
             addItemsToVest[] = {
                 LIST_2("HandGrenade"),
                 LIST_2("SmokeShell"),
-                LIST_2("16Rnd_9x21_Mag"),
+                LIST_2("rhsusf_mag_17Rnd_9x19_JHP"),
                 LIST_8("30Rnd_556x45_Stanag"),
                 LIST_8("1Rnd_HE_Grenade_shell"),
                 LIST_3("1Rnd_SmokeRed_Grenade_shell")
@@ -179,7 +179,7 @@ class BWFleck {
             binoculars = "ACE_VectorDay";
             addItemsToVest[] = {
                 LIST_2("SmokeShell"),
-                LIST_2("16Rnd_9x21_Mag"),
+                LIST_2("rhsusf_mag_17Rnd_9x19_JHP"),
                 LIST_9("20Rnd_762x51_Mag")
             };
         };
@@ -236,7 +236,7 @@ class BWFleck {
             addItemsToVest[] = {
                 LIST_2("HandGrenade"),
                 LIST_2("SmokeShell"),
-                LIST_2("16Rnd_9x21_Mag"),
+                LIST_2("rhsusf_mag_17Rnd_9x19_JHP"),
                 LIST_8("30Rnd_556x45_Stanag"),
                 LIST_2("1Rnd_SmokeRed_Grenade_shell"),
                 LIST_2("1Rnd_SmokeGreen_Grenade_shell"),
