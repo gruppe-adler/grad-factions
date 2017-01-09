@@ -1,46 +1,47 @@
 #ifdef NIGHTVISION
-  #define NVITEM "NVGoggles_OPFOR"
+    #define NVITEM "NVGoggles_OPFOR"
 #else
-  #define NVITEM ""
+    #define NVITEM ""
 #endif
 
 #ifdef LASERS
-  #define LLITEM "rhs_acc_perst1ik"
+    #define LLITEM "rhs_acc_perst1ik"
 #else
-  #define LLITEM ""
+    #define LLITEM ""
 #endif
 
 #ifdef GUNLIGHTS
-  #define LLITEM "rhs_acc_2dpZenit"
+    #define LLITEM "rhs_acc_2dpZenit"
 #else
-  #define LLITEM ""
+    #define LLITEM ""
 #endif
 
 #ifdef SUPPRESSORS
-  #define SUPPRESSORITEM "rhs_acc_tgpa"
+    #define SUPPRESSORITEM "rhs_acc_tgpa"
 #else
-  #define SUPPRESSORITEM "rhs_acc_dtk"
+    #define SUPPRESSORITEM "rhs_acc_dtk"
 #endif
 
-class RUFlora {
+class RUFloraSub {
     class AllUnits {
-        uniform = "rhs_uniform_flora";
-        vest = "rhs_6b13_Flora_6sh92";
-        backpack = "";
-        headgear = "rhs_6b26";
-        primaryWeapon = "rhs_weap_ak74m";
-        primaryWeaponMuzzle = SUPPRESSORITEM;
-        primaryWeaponPointer = LLITEM;
-        primaryWeaponOptics = "rhs_acc_pkas";
-        handgunWeapon = "rhs_weap_makarov_pm";
-        binoculars = "Binocular";
-        map = "ItemMap";
-        compass = "ItemCompass";
-        watch = "ItemWatch";
-        gps = "ItemGPS";
-        radio = "tf_fadak";
-        nvgoggles = NVITEM;
+            uniform = "rhs_uniform_flora_patchless_alt";
+            vest = "rhs_6b23_ML_6sh92";
+            backpack = "";
+            headgear = "rhs_6b27m_ml";
+            primaryWeapon = "rhs_weap_ak74m";
+            primaryWeaponMuzzle = SUPPRESSORITEM;
+            primaryWeaponPointer = LLITEM;
+            primaryWeaponOptics = "rhs_acc_pkas";
+            handgunWeapon = "rhs_weap_makarov_pm";
+            binoculars = "Binocular";
+            map = "ItemMap";
+            compass = "ItemCompass";
+            watch = "ItemWatch";
+            gps = "ItemGPS";
+            radio = "tf_fadak";
+            nvgoggles = NVITEM;
     };
+
     class Type {
         //Rifleman
         class Soldier_F {
@@ -54,12 +55,14 @@ class RUFlora {
                 "ACE_epinephrine",
                 "ACE_Flashlight_KSF1"
             };
+
             addItemsToVest[] = {
                 LIST_2("rhs_mag_rgd5"),
                 "rhs_mag_rdg2_white",
                 LIST_8("rhs_30Rnd_545x39_AK")
             };
         };
+
         //Asst. Autorifleman
         class Soldier_AAR_F: Soldier_F {
             backpack = "rhs_assault_umbts";
@@ -67,12 +70,15 @@ class RUFlora {
                 LIST_3("rhs_100Rnd_762x54mmR_green")
             };
         };
+
         //Asst. Gunner (HMG/GMG)
-        class support_AMG_F: Soldier_AAR_F {};
+        class support_AMG_F: Soldier_AAR_F {
+            backpack = "rhs_assault_umbts";
+        };
 
         //Asst. Missile Specialist (AA)
         class Soldier_AAA_F: Soldier_F {
-            backpack = "rhs_assault_umbts";
+            backpack = "rhs_rpg_empty";
             addItemsToBackpack[] = {
                 LIST_2("rhs_mag_9k38_rocket")
             };
@@ -80,7 +86,7 @@ class RUFlora {
 
         //Asst. Missile Specialist (AT)
         class Soldier_AAT_F: Soldier_F {
-            backpack = "rhs_assault_umbts";
+            backpack = "rhs_rpg_empty";
             addItemsToBackpack[] = {
                 LIST_2("RPG32_F")
             };
@@ -89,6 +95,7 @@ class RUFlora {
         //Autorifleman
         class Soldier_AR_F: Soldier_F {
             primaryWeapon = "rhs_weap_pkp";
+            headgear = "rhs_6b27m_ml_ess";
             backpack = "rhs_assault_umbts";
             addItemsToBackpack[] = {
                 LIST_3("rhs_100Rnd_762x54mmR_green")
@@ -102,7 +109,7 @@ class RUFlora {
 
         //Combat Life Saver
         class medic_F: Soldier_F {
-            vest = "rhs_6b13_Flora_6sh92_headset_mapcase";
+            vest = "rhs_6b23_ML_medic";
             backpack = "rhs_assault_umbts";
             addItemsToBackpack[] = {
                 LIST_5("ACE_bloodIV"),
@@ -129,7 +136,7 @@ class RUFlora {
         //Grenadier
         class Soldier_GL_F: Soldier_F {
             primaryWeapon = "rhs_weap_ak74m_gp25";
-            vest = "rhs_6b13_Flora_6sh92_vog";
+            vest = "rhs_6b23_ML_6sh92_vog";
             backpack = "rhs_assault_umbts";
             addItemsToBackpack[] = {
                 LIST_2("rhs_mag_rgd5"),
@@ -142,14 +149,17 @@ class RUFlora {
         };
 
         //Heavy Gunner
-        class HeavyGunner_F: Soldier_AR_F {};
+        class HeavyGunner_F: Soldier_AR_F {
+            backpack = "rhs_assault_umbts";
+        };
 
         //Marksman
         class Soldier_M_F: Soldier_F {
+            uniform = "U_I_FullGhillie_ard";
+            vest = "rhs_6b23_ML_6sh92_radio";
+            goggles = "rhs_balaclava";
             primaryWeapon = "rhs_weap_svdp";
-            primaryWeaponOptics = "rhs_acc_pso1m21";
-            primaryWeaponPointer = "";
-            primaryWeaponMuzzle = "";
+            primaryWeaponAttachments[] = {"rhs_acc_pso1m21"};
             addItemsToVest[] = {
                 LIST_2("rhs_mag_rgd5"),
                 "rhs_mag_rdg2_white",
@@ -161,7 +171,7 @@ class RUFlora {
         class Soldier_AA_F: Soldier_F {
             primaryWeapon = "rhs_weap_ak74m_camo";
             secondaryWeapon = "rhs_weap_igla";
-            backpack = "rhs_assault_umbts";
+            backpack = "rhs_rpg_empty";
             addItemsToBackpack[] = {
                 LIST_2("rhs_mag_9k38_rocket")
             };
@@ -169,11 +179,13 @@ class RUFlora {
 
         //Missile Specialist (AT)
         class Soldier_AT_F: Soldier_F {
+        	headgear = "rhs_6b27m_ml";
             primaryWeapon = "rhs_weap_ak74m_camo";
-            secondaryWeapon = "launch_RPG32_ghex_F";
-            backpack = "rhs_assault_umbts";
+            secondaryWeapon = "rhs_weap_rpg7";
+            backpack = "rhs_rpg_empty";
             addItemsToBackpack[] = {
-                LIST_2("RPG32_F")
+                LIST_3("rhs_rpg7_PG7VL_mag"),
+                "rhs_rpg7_OG7V_mag"
             };
         };
 
@@ -190,21 +202,20 @@ class RUFlora {
 
         //Rifleman (AT)
         class Soldier_LAT_F: Soldier_F {
-            secondaryWeapon = "rhs_weap_rpg7";
-            headgear = "rhs_6b26_bala";
+            headgear = "rhs_6b27m_ml_ess";
+            secondaryWeapon = "rhs_weap_rpg26";
             backpack = "rhs_assault_umbts";
             addItemsToBackpack[] = {
-                LIST_3("rhs_rpg7_PG7VL_mag"),
-                "rhs_rpg7_OG7V_mag"
+                "rhs_rpg26_mag",
             };
         };
 
         //Squad Leader
         class Soldier_SL_F: Soldier_F {
+            vest = "rhs_6b23_ML_6sh92_vog_headset";
+            headgear = "rhs_6b27m_ml_ess_bala";
             primaryWeapon = "rhs_weap_ak74m_gp25";
             backpack = "tf_mr3000_rhs";
-            headgear = "rhs_6b26_ess";
-            vest = "rhs_6b13_Flora_6sh92_radio";
             addItemsToBackpack[] = {
                 LIST_2("rhs_mag_rdg2_white"),
                 LIST_4("rhs_VG40MD_Green"),
@@ -212,9 +223,12 @@ class RUFlora {
                 LIST_4("rhs_VG40MD_White")
             };
         };
-        
+
         //Team Leader
         class Soldier_TL_F: Soldier_SL_F {
+            headgear = "rhs_6b27m_ml_bala";
+            vest = "rhs_6b23_ML_6sh92_vog_headset";
+            primaryWeapon = "rhs_weap_ak74m_gp25";
             addItemsToBackpack[] = {
                 LIST_2("rhs_mag_rdg2_white"),
                 LIST_2("rhs_VG40MD_Green"),
@@ -223,10 +237,18 @@ class RUFlora {
                 LIST_4("rhs_VOG25")
             };
         };
+
+        //Spotter
+        class Spotter_F: Soldier_SL_F {
+        	uniform = "U_I_FullGhillie_ard";
+        	goggles = "rhs_balaclava";
+        	vest = "rhs_6b23_ML_6sh92_radio";
+        };
     };
     class Rank {
         class LIEUTENANT {
-            headgear = "rhs_fieldcap_vsr";
+        vest = "rhs_6b23_ML_crewofficer";
+            headgear = "rhs_beret_milp";
         };
     };
 };
