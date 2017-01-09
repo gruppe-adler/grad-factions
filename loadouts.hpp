@@ -14,7 +14,6 @@ class Loadouts {
         #include "factions\UsMPT.hpp"
         #include "factions\UsUCP.hpp"
         #include "factions\RuFlora.hpp"
-        #include "factions\RuFloraSub.hpp"
         #include "factions\RuEMR.hpp"
 	};
 };

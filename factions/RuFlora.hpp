@@ -69,7 +69,6 @@ class RUFlora {
         };
         //Asst. Gunner (HMG/GMG)
         class support_AMG_F: Soldier_AAR_F {};
-
         //Asst. Missile Specialist (AA)
         class Soldier_AAA_F: Soldier_F {
             backpack = "rhs_assault_umbts";
@@ -77,7 +76,6 @@ class RUFlora {
                 LIST_2("rhs_mag_9k38_rocket")
             };
         };
-
         //Asst. Missile Specialist (AT)
         class Soldier_AAT_F: Soldier_F {
             backpack = "rhs_assault_umbts";
@@ -85,7 +83,6 @@ class RUFlora {
                 LIST_2("RPG32_F")
             };
         };
-
         //Autorifleman
         class Soldier_AR_F: Soldier_F {
             primaryWeapon = "rhs_weap_pkp";
@@ -99,7 +96,6 @@ class RUFlora {
                 "rhs_100Rnd_762x54mmR_7N26"
             };
         };
-
         //Combat Life Saver
         class medic_F: Soldier_F {
             vest = "rhs_6b13_Flora_6sh92_headset_mapcase";
@@ -113,7 +109,6 @@ class RUFlora {
                 LIST_6("rhs_mag_rdg2_white")
             };
         };
-
         //Explosive Specialist
         class Soldier_exp_F: Soldier_F {
             backpack = "rhs_assault_umbts_engineer_empty";
@@ -125,7 +120,6 @@ class RUFlora {
                 LIST_3("DemoCharge_Remote_Mag")
             };
         };
-
         //Grenadier
         class Soldier_GL_F: Soldier_F {
             primaryWeapon = "rhs_weap_ak74m_gp25";
@@ -140,10 +134,8 @@ class RUFlora {
                 LIST_2("rhs_VG40MD_Red")
             };
         };
-
         //Heavy Gunner
         class HeavyGunner_F: Soldier_AR_F {};
-
         //Marksman
         class Soldier_M_F: Soldier_F {
             primaryWeapon = "rhs_weap_svdp";
@@ -156,7 +148,6 @@ class RUFlora {
                 LIST_11("rhs_10Rnd_762x54mmR_7N1")
             };
         };
-
         //Missile Specialist (AA)
         class Soldier_AA_F: Soldier_F {
             primaryWeapon = "rhs_weap_ak74m_camo";
@@ -166,7 +157,6 @@ class RUFlora {
                 LIST_2("rhs_mag_9k38_rocket")
             };
         };
-
         //Missile Specialist (AT)
         class Soldier_AT_F: Soldier_F {
             primaryWeapon = "rhs_weap_ak74m_camo";
@@ -176,7 +166,6 @@ class RUFlora {
                 LIST_2("RPG32_F")
             };
         };
-
         //Repair Specialist
         class Soldier_repair_F: Soldier_F {
             primaryWeapon = "rhs_weap_ak74m_2mag";
@@ -187,7 +176,6 @@ class RUFlora {
                 "ACE_wirecutter"
             };
         };
-
         //Rifleman (AT)
         class Soldier_LAT_F: Soldier_F {
             secondaryWeapon = "rhs_weap_rpg7";
@@ -198,7 +186,6 @@ class RUFlora {
                 "rhs_rpg7_OG7V_mag"
             };
         };
-
         //Squad Leader
         class Soldier_SL_F: Soldier_F {
             primaryWeapon = "rhs_weap_ak74m_gp25";
@@ -212,7 +199,6 @@ class RUFlora {
                 LIST_4("rhs_VG40MD_White")
             };
         };
-        
         //Team Leader
         class Soldier_TL_F: Soldier_SL_F {
             addItemsToBackpack[] = {
