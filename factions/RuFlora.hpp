@@ -71,7 +71,7 @@ class RUFlora {
         class support_AMG_F: Soldier_AAR_F {};
         //Asst. Missile Specialist (AA)
         class Soldier_AAA_F: Soldier_F {
-            backpack = "rhs_assault_umbts";
+            backpack = "rhs_rpg_empty";
             addItemsToBackpack[] = {
                 LIST_2("rhs_mag_9k38_rocket")
             };
@@ -80,7 +80,7 @@ class RUFlora {
         class Soldier_AAT_F: Soldier_F {
             backpack = "rhs_assault_umbts";
             addItemsToBackpack[] = {
-                LIST_2("RPG32_F")
+                LIST_2("rhs_rpg7_PG7VL_mag")
             };
         };
         //Autorifleman
@@ -160,10 +160,11 @@ class RUFlora {
         //Missile Specialist (AT)
         class Soldier_AT_F: Soldier_F {
             primaryWeapon = "rhs_weap_ak74m_camo";
-            secondaryWeapon = "launch_RPG32_ghex_F";
-            backpack = "rhs_assault_umbts";
+            secondaryWeapon = "rhs_weap_rpg7";
+            backpack = "rhs_rpg_empty";
             addItemsToBackpack[] = {
-                LIST_2("RPG32_F")
+                LIST_3("rhs_rpg7_PG7VL_mag"),
+                "rhs_rpg7_OG7V_mag"
             };
         };
         //Repair Specialist
@@ -180,11 +181,6 @@ class RUFlora {
         class Soldier_LAT_F: Soldier_F {
             secondaryWeapon = "rhs_weap_rpg7";
             headgear = "rhs_6b26_bala";
-            backpack = "rhs_assault_umbts";
-            addItemsToBackpack[] = {
-                LIST_3("rhs_rpg7_PG7VL_mag"),
-                "rhs_rpg7_OG7V_mag"
-            };
         };
         //Squad Leader
         class Soldier_SL_F: Soldier_F {
@@ -201,6 +197,7 @@ class RUFlora {
         };
         //Team Leader
         class Soldier_TL_F: Soldier_SL_F {
+            backpack = "rhs_assault_umbts";
             addItemsToBackpack[] = {
                 LIST_2("rhs_mag_rdg2_white"),
                 LIST_2("rhs_VG40MD_Green"),
