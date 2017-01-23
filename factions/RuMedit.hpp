@@ -90,7 +90,7 @@ class RuMedit: RUFlora {
         };
 
         class Sniper_F: Sniper_F {
-            heargear = "rhs_fieldcap_helm_ml";
+            headgear = "rhs_fieldcap_ml";
             vest = "rhs_6b23_ML_6sh92_radio";
         };
 
@@ -104,7 +104,7 @@ class RuMedit: RUFlora {
             primaryWeapon = "rhs_weap_ak74m_camo";
             goggles = "rhs_balaclava";
             vest = "rhs_6b23_ML_6sh92_radio";
-            heargear = "rhs_fieldcap_helm_ml";
+            headgear = "rhs_fieldcap_ml";
         };
 
         class Soldier_TL_F: Soldier_TL_F {
