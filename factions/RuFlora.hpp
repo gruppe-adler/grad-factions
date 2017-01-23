@@ -54,7 +54,7 @@ class RUFlora {
             };
             addItemsToVest[] = {
                 LIST_2("rhs_mag_rgd5"),
-                "rhs_mag_rdg2_white",
+                LIST_2("rhs_mag_rdg2_white"),
                 LIST_8("rhs_30Rnd_545x39_AK")
             };
         };
@@ -99,11 +99,11 @@ class RUFlora {
             vest = "rhs_6b13_Flora_6sh92_headset_mapcase";
             backpack = "rhs_assault_umbts";
             addItemsToBackpack[] = {
-                LIST_5("ACE_bloodIV"),
+                LIST_8("ACE_bloodIV"),
                 LIST_15("ACE_epinephrine"),
                 LIST_20("ACE_morphine"),
                 LIST_20("ACE_fieldDressing"),
-                LIST_20("ACE_fieldDressing"),
+                LIST_10("ACE_fieldDressing"),
                 LIST_6("rhs_mag_rdg2_white")
             };
         };
@@ -150,7 +150,7 @@ class RUFlora {
         class Soldier_AA_F: Soldier_F {
             primaryWeapon = "rhs_weap_ak74m_camo";
             secondaryWeapon = "rhs_weap_igla";
-            backpack = "rhs_assault_umbts";
+            backpack = "rhs_rpg_empty";
             addItemsToBackpack[] = {
                 LIST_2("rhs_mag_9k38_rocket")
             };
@@ -177,8 +177,32 @@ class RUFlora {
         };
         //Rifleman (AT)
         class Soldier_LAT_F: Soldier_F {
-            secondaryWeapon = "rhs_weap_rpg7";
+            secondaryWeapon = "rhs_weap_rpg26";
             headgear = "rhs_6b26_bala";
+        };
+        //Sniper
+        class Sniper_F: Soldier_F {
+            primaryWeapon = "rhs_weap_t5000";
+            primaryWeaponOptics = "rhs_acc_dh520x56";
+            primaryWeaponUnderbarrel = "rhs_acc_harris_swivel";
+            vest = "rhsgref_6b23_khaki_sniper";
+            headgear = "rhs_Booniehat_flora";
+            binoculars = "rhs_pdu4";
+            addItemsToVest[] = {
+                LIST_2("rhs_mag_rdg2_white"),
+                LIST_20("rhs_5Rnd_338lapua_t5000")
+            };
+            addItemsToUniform[] = {
+                "ACE_MapTools",
+                "ACE_EarPlugs",
+                LIST_2("rhs_mag_9x18_8_57N181S"),
+                LIST_2("ACE_CableTie"),
+                LIST_8("ACE_fieldDressing"),
+                LIST_4("ACE_morphine"),
+                "ACE_epinephrine",
+                "ACE_Flashlight_KSF1",
+                "ACE_RangeCard"
+            };
         };
         //Squad Leader
         class Soldier_SL_F: Soldier_F {
@@ -191,6 +215,24 @@ class RUFlora {
                 LIST_4("rhs_VG40MD_Green"),
                 LIST_4("rhs_VG40MD_Red"),
                 LIST_4("rhs_VG40MD_White")
+            };
+        };
+        //Spotter
+        class Spotter_F: Soldier_F {
+            binoculars = "rhs_pdu4";
+            headgear = "rhs_Booniehat_flora";
+            addItemsToUniform[] = {
+                "ACE_MapTools",
+                "ACE_EarPlugs",
+                "ACE_ATragMX",
+                "ACE_Kestrel4500",
+                "ACE_RangeCard",
+                LIST_2("rhs_mag_9x18_8_57N181S"),
+                LIST_2("ACE_CableTie"),
+                LIST_8("ACE_fieldDressing"),
+                LIST_4("ACE_morphine"),
+                "ACE_epinephrine",
+                "ACE_Flashlight_KSF1"
             };
         };
         //Team Leader
