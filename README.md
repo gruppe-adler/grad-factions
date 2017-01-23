@@ -82,26 +82,34 @@ These factions are available (see also the `factions` directory):
 
 **NOTE**: Loadouts are not guaranteed to work with units provided by Mods. If you need a specific mod supported, open an issue with [grad-loadout](https://github.com/gruppe-adler/grad-loadout).
 
-/*  Von den angegebenen Kategorien haben die folgenden Einheiten ein Standardloadout:
-*   Englisch:                                 Deutsch:                                          Funktion:
-*   Asst. Autorifleman                        Zweiter Automatik Schütze                         Munitionsträger für LMG
-*   Asst. Gunner (HMG/GMG)                    Zweiter Schütze (Mk30/GMG)                        Munitionsträger für MMG
-*   Asst. Missile Specialist (AA)             Zweiter Raketenspezialist (Luftabwehr)            Munitionsträger für Luftabwehrschütze
-*   Asst. Missile Specialist (AT)             Zweiter Raketenspezialist (Panzerabwehr)          Munitionsträger für Panzerabwehrschütze
-*   Autorifleman                              Automatik-Schütze                                 LMG Schütze
-*   Combat Life Saver                         Sanitäter                                         Sanitäter
-*   Explosive Specialist                      Sprengmeister                                     Sprengmeister
-*   Grenadier                                 Grenadier                                         Grenadier
-*   Heavy Gunner                              Schwerer Schütze                                  MMG Schütze
-*   Marksman                                  Scharfschütze (nicht DLC)                         Gruppenscharfschütze (DMR)
-*   Missile Specialist (AA)                   Raketenspezialist (Luftabwehr)                    Luftabwehrschütze
-*   Missile Specialist (AT)                   Raketenspezialist (Panzerabwehr)                  Panzerabwehrschütze
-*   Repair Specialist                         Reparaturspezialist                               Reparaturspezialist
-*   Rifleman                                  Schütze                                           Schütze
-*   Rifleman (AT)                             Schütze (Panzerabwehr)                            Schütze mit leichter AT-Waffe
-*   Squad Leader                              Truppführer                                       Truppführer
-*   Team Leader                               Teamleader                                        Gruppenführer und Zugführer
-*/
+Von den angegebenen Kategorien haben die folgenden Einheiten ein Standardloadout:
+
+Englisch:                     | Deutsch:                                 | Funktion:
+------------------------------|------------------------------------------|----------------------------------------
+Asst. Autorifleman            | Zweiter Automatik Schütze                | Munitionsträger für LMG
+Asst. Gunner (HMG/GMG)        | Zweiter Schütze (Mk30/GMG)               | Munitionsträger für MMG
+Asst. Missile Specialist (AA) | Zweiter Raketenspezialist (Luftabwehr)   | Munitionsträger für Luftabwehrschütze
+Asst. Missile Specialist (AT) | Zweiter Raketenspezialist (Panzerabwehr) | Munitionsträger für Panzerabwehrschütze
+Autorifleman                  | Automatik-Schütze                        | LMG Schütze
+Combat Life Saver             | Sanitäter                                | Sanitäter
+Explosive Specialist          | Sprengmeister                            | Sprengmeister
+Grenadier                     | Grenadier                                | Grenadier
+Heavy Gunner                  | Schwerer Schütze                         | MMG Schütze
+Marksman                      | Scharfschütze (nicht DLC)                | Gruppenscharfschütze (DMR)
+Missile Specialist (AA)       | Raketenspezialist (Luftabwehr)           | Luftabwehrschütze
+Missile Specialist (AT)       | Raketenspezialist (Panzerabwehr)         | Panzerabwehrschütze
+Repair Specialist             | Reparaturspezialist                      | Reparaturspezialist
+Rifleman                      | Schütze                                  | Schütze
+Rifleman (AT)                 | Schütze (Panzerabwehr)                   | Schütze mit leichter AT-Waffe
+Squad Leader                  | Truppführer                              | Truppführer
+Team Leader                   | Teamleader                               | Gruppenführer und Zugführer
+
+Sowie derzeit nur bei den russischen Faktionen:
+Englisch:                     | Deutsch:                                 | Funktion:
+------------------------------|------------------------------------------|----------------------------------------
+Sniper                        | Sniper                                   | Sniper
+Spotter                       | Spotter                                  | Spotter
+
 
 --------------------------------------------------------------------------------
 

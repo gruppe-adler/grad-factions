@@ -221,6 +221,7 @@ class RUFlora {
         class Spotter_F: Soldier_F {
             binoculars = "rhs_pdu4";
             headgear = "rhs_Booniehat_flora";
+            backpack = "rhs_assault_umbts";
             addItemsToUniform[] = {
                 "ACE_MapTools",
                 "ACE_EarPlugs",
@@ -233,6 +234,10 @@ class RUFlora {
                 LIST_4("ACE_morphine"),
                 "ACE_epinephrine",
                 "ACE_Flashlight_KSF1"
+            };
+            addItemsToBackpack[] = {
+                "ACE_Tripod",
+                "ACE_SpottingScope"
             };
         };
         //Team Leader
