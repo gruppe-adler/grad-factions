@@ -133,7 +133,7 @@ class USOCP {
                 LIST_10("ACE_quikclot"),
                 LIST_12("ACE_epinephrine"),
                 LIST_16("ACE_morphine"),
-                LIST_6("ACE_adenosine")
+                LIST_6("ACE_adenosine"),
                 LIST_6("ACE_tourniquet"),
                 LIST_10("ACE_salineIV_500")
             };
