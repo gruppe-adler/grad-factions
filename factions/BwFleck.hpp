@@ -137,7 +137,7 @@ class BWFleck {
                 LIST_10("ACE_quikclot"),
                 LIST_15("ACE_epinephrine"),
                 LIST_20("ACE_morphine"),
-                LIST_6("ACE_adenosine")
+                LIST_6("ACE_adenosine"),
                 LIST_8("ACE_tourniquet"),
                 LIST_14("ACE_salineIV_500"),
                 "GRAD_ALK",
