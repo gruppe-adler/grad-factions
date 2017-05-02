@@ -72,6 +72,7 @@ These factions are available (see also the `factions` directory):
 | UsOCP          |  US Army OCP                                 |
 | UsUCP          |  US Army UCP                                 |
 | UsMPT          |  US Marines MARPAT                           |
+| SOGBlack       |  CIA Special Operations Group                |
 
 
 **HINT**: If you do not know which faction your editor-created units belong to, have a look into the [BI Community Wiki](https://community.bistudio.com/wiki/Arma_3_CfgVehicles_WEST)
