@@ -1,5 +1,5 @@
 # GRAD Factions
-(internal information for Gruppe Adler members [here](https://forum.gruppe-adler.de/topic/1557/grad-factions-coop-loadouts))
+Internal information for Gruppe Adler members [here](https://forum.gruppe-adler.de/topic/1557/grad-factions-coop-loadouts).
 
 ## Installation
 
