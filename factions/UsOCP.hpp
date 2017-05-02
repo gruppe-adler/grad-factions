@@ -66,7 +66,7 @@ class USOCP {
             backpack = "rhsusf_assault_eagleaiii_ocp";
             addItemsToBackpack[] = {
                 LIST_2("rhs_200rnd_556x45_M_SAW"),
-                "rhsusf_100Rnd_556x45_M200_soft_pouch"
+                "rhsusf_100Rnd_556x45_soft_pouch"
             };
         };
         //Asst. Gunner (HMG/GMG)
@@ -101,7 +101,7 @@ class USOCP {
             backpack = "rhsusf_assault_eagleaiii_ocp";
             addItemsToBackpack[] = {
                 LIST_2("rhs_200rnd_556x45_M_SAW"),
-                "rhsusf_100Rnd_556x45_M200_soft_pouch"
+                "rhsusf_100Rnd_556x45_soft_pouch"
             };
             addItemsToVest[] = {
                 LIST_2("HandGrenade"),
