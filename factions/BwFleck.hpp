@@ -31,6 +31,10 @@ class BWFleck {
 		primaryWeaponOptics = "FHQ_optic_HWS_G33";
 		primaryWeaponPointer = LLITEM;
 		primaryWeaponMuzzle = SUPPRESSORITEM;
+        primaryWeaponUnderbarrel = "";
+		primaryWeaponUnderbarrelMagazine = "";
+        secondaryWeapon = "";
+        secondaryWeaponMagazine = "";
 		handgunWeapon = "rhsusf_weap_glock17g4";
         handgunWeaponMagazine = "rhsusf_mag_17Rnd_9x19_JHP";
 		binoculars = "Binocular";

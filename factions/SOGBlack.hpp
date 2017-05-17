@@ -36,6 +36,9 @@ class SOGBLACK {
         primaryWeaponPointer = LLITEM;
         primaryWeaponOptics = "rhsusf_acc_ACOG_RMR";
 		primaryWeaponUnderbarrel = "rhsusf_acc_grip3";
+		primaryWeaponUnderbarrelMagazine = "";
+        secondaryWeapon = "";
+        secondaryWeaponMagazine = "";
         handgunWeapon = "rhsusf_weap_glock17g4";
 		handgunWeaponMuzzle = "rhsusf_acc_omega9k";
         handgunWeaponMagazine = "rhsusf_mag_17Rnd_9x19_FMJ";

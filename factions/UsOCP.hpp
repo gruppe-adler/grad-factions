@@ -31,6 +31,10 @@ class USOCP {
         primaryWeaponMuzzle = SUPPRESSORITEM;
         primaryWeaponPointer = LLITEM;
         primaryWeaponOptics = "FHQ_optic_HWS_G33";
+        primaryWeaponUnderbarrel = "";
+		primaryWeaponUnderbarrelMagazine = "";
+        secondaryWeapon = "";
+        secondaryWeaponMagazine = "";
         handgunWeapon = "rhsusf_weap_m9";
         handgunWeaponMagazine = "rhsusf_mag_15Rnd_9x19_JHP";
         binoculars = "Binocular";
