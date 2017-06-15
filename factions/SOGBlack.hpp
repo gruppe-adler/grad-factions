@@ -54,15 +54,18 @@ class SOGBLACK {
         //Rifleman
         class Soldier_F {
             addItemsToUniform[] = {
-                "ACE_MapTools",
-                "ACE_DefusalKit",
+                LIST_1("ACE_MapTools"),
+                LIST_1("ACE_DefusalKit"),
                 LIST_2("ACE_CableTie"),
-                LIST_10("ACE_fieldDressing"),
-                LIST_6("ACE_quikclot"),
-                LIST_4("ACE_morphine"),
-				LIST_1("ACE_key_lockpick"),
-                "ACE_epinephrine",
-                "ACE_Flashlight_MX991"
+                LIST_1("ACE_Flashlight_MX991"),
+                LIST_1("ACE_key_lockpick"),
+
+                LIST_4("ACE_packingBandage"),
+                LIST_4("ACE_elasticBandage"),
+                LIST_4("ACE_quikclot"),
+                LIST_4("ACE_tourniquet"),
+                LIST_2("ACE_morphine"),
+                LIST_2("ACE_epinephrine")
             };
             addItemsToVest[] = {
                 LIST_2("HandGrenade"),
@@ -127,7 +130,6 @@ class SOGBLACK {
                 "ACE_MapTools",
                 "ACE_Flashlight_MX991",
                 "GRAD_ALK",
-                "ACE_personalAidKit",
                 "ACE_surgicalKit"
             };
             addItemsToVest[] = {
@@ -146,7 +148,7 @@ class SOGBLACK {
                 LIST_16("ACE_morphine"),
                 LIST_6("ACE_adenosine"),
                 LIST_6("ACE_tourniquet"),
-                LIST_10("ACE_salineIV_500")
+                LIST_8("ACE_salineIV_500")
             };
         };
         //Explosive Specialist

@@ -49,14 +49,17 @@ class BWFleck {
         //Rifleman
         class Soldier_F {
             addItemsToUniform[] = {
-                "ACE_MapTools",
-                "ACE_DefusalKit",
+                LIST_1("ACE_MapTools"),
+                LIST_1("ACE_DefusalKit"),
                 LIST_2("ACE_CableTie"),
-                LIST_10("ACE_fieldDressing"),
-                LIST_6("ACE_quikclot"),
-                LIST_4("ACE_morphine"),
-                "ACE_epinephrine",
-                "ACE_Flashlight_MX991"
+                LIST_1("ACE_Flashlight_MX991"),
+
+                LIST_4("ACE_packingBandage"),
+                LIST_4("ACE_elasticBandage"),
+                LIST_4("ACE_quikclot"),
+                LIST_4("ACE_tourniquet"),
+                LIST_2("ACE_morphine"),
+                LIST_2("ACE_epinephrine")
             };
             addItemsToVest[] = {
                 LIST_2("HandGrenade"),
@@ -143,10 +146,9 @@ class BWFleck {
                 LIST_20("ACE_morphine"),
                 LIST_6("ACE_adenosine"),
                 LIST_8("ACE_tourniquet"),
-                LIST_14("ACE_salineIV_500"),
-                "GRAD_ALK",
-                "ACE_surgicalKit",
-                "ACE_personalAidKit"
+                LIST_8("ACE_salineIV_500"),
+                LIST_1("GRAD_ALK"),
+                LIST_1("ACE_surgicalKit")
             };
         };
 
