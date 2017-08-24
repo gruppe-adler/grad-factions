@@ -43,7 +43,7 @@ class Vietcong {
         watch = "ItemWatch";
         gps = "";
         radio = "";
-		googles = "";
+		googles = "NeckTight_Gry";
         nvgoggles = NVITEM;
     };
     class Type {
