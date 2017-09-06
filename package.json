@@ -12,7 +12,7 @@
         }
     ],
     "description": "Various faction loadouts for grad-loadout",
-    "version": "1.3.1",
+    "version": "1.3.2",
     "dependencies": {
         "grad-loadout": "^4.7.0"
     }
