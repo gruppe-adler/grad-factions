@@ -3,6 +3,7 @@
 #include "medicloadoutBase.hpp"
 
 #include "factions\BwFleck.hpp"
+#include "factions\BwOld.hpp"
 #include "factions\BwTrop.hpp"
 #include "factions\UsOCP.hpp"
 #include "factions\UsMPT.hpp"
@@ -10,6 +11,7 @@
 #include "factions\RuFlora.hpp"
 #include "factions\RuEMR.hpp"
 #include "factions\SOGBlack.hpp"
+#include "factions\Taliban.hpp"
 #include "factions\UsmcVietnam.hpp"
 #include "factions\Vietcong.hpp"
 
