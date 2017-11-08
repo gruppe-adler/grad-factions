@@ -86,7 +86,7 @@ class BWTrop: BWFleck {
         };
 
         class soldier_LAT_F: soldier_LAT_F {
-
+	    backpack = "ARC_GER_Backpack_Carryall_Tropentarn";
         };
 
         class Soldier_SL_F: Soldier_SL_F {
