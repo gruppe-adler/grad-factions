@@ -238,7 +238,8 @@ class BWFleck {
         class soldier_LAT_F: Soldier_F {
           secondaryWeapon = "rhs_weap_M136";
         };
-	
+	    
+	//LMG
 	class Soldier_lite_F: Soldier_F {
 		primaryWeapon = "rhs_weap_m249_pip_S";
             primaryWeaponMagazine = "rhs_200rnd_556x45_T_SAW";
@@ -246,7 +247,7 @@ class BWFleck {
              handgunWeaponMagazine = "";
              backpack = "ARC_GER_Kitbag_compact_Flecktarn";
              addItemsToBackpack[] = {
-                LIST_2("rhs_200rnd_556x45_M_SAW"),
+                LIST_4("rhs_200rnd_556x45_M_SAW"),
                 "rhsusf_100Rnd_556x45_soft_pouch",	
 	};
         //Squad Leader
