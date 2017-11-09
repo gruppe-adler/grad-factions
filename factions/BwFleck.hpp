@@ -217,12 +217,12 @@ class BWFleck {
 
         //Missile Specialist (AT)
         class soldier_AT_F: Soldier_F {
-            secondaryWeapon = "rhs_weap_fgm148";
-            secondaryWeaponMagazine = "rhs_fgm148_magazine_AT";
-            backpack = "ARC_GER_Backpack_Carryall_Flecktarn";
-            addItemsToBackpack[] = {
-                "rhs_fgm148_magazine_AT"
-            };
+            secondaryWeapon = "rhs_weap_maaws";
+          secondaryWeaponMagazine = "rhs_mag_maaws_HEAT";
+          backpack = "ARC_GER_Backpack_Carryall_Flecktarn";
+          addItemsToBackpack[] = {
+              LIST_2("rhs_mag_maaws_HEAT")
+          };
         };
 
         //Repair Specialist
@@ -236,12 +236,7 @@ class BWFleck {
 
         //Rifleman (AT)
         class soldier_LAT_F: Soldier_F {
-          secondaryWeapon = "rhs_weap_maaws";
-          secondaryWeaponMagazine = "rhs_mag_maaws_HEAT";
-          backpack = "ARC_GER_Backpack_Carryall_Flecktarn";
-          addItemsToBackpack[] = {
-              LIST_2("rhs_mag_maaws_HEAT")
-          };
+          secondaryWeapon = "rhs_weap_M136";
         };
 	
 	class Soldier_lite_F: Soldier_F {
