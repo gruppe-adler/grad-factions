@@ -55,16 +55,38 @@ class CfgFunctions {
 ### init.sqf
 
 You're nearly done. One last thing you will have to do: define which loadouts should actually be applied:
-Somewhere in your init.sqf, for example:
+Somewhere in your init.sqf:
+
+**Syntax**  
+
+```
+[faction,loadout] call GRAD_Loadout_fnc_FactionSetLoadout;
+```
+
+| Parameter | Description                                                             |
+|-----------|-------------------------------------------------------------------------|
+| faction   | string - Faction that the following loadout class should be applied to. |
+| loadout   | string - Loadout classname. See below for available loadouts.           |
+
+**Example**  
+Here we will give the vanilla NATO units Bundeswehr loadouts, specifically *BwFleck* and the vanilla FIA units will get the *ModerateRebels* loadouts.
 
 ```
 ["BLU_F", "BwFleck"] call GRAD_Loadout_fnc_FactionSetLoadout;
 ["OPF_G_F", "ModerateRebels"] call GRAD_Loadout_fnc_FactionSetLoadout;
 ```
 
+**HINT**: If you do not know which faction your editor-created units belong to, have a look into the [BI Community Wiki](https://community.bistudio.com/wiki/Arma_3_CfgVehicles_WEST)
+
+**NOTE**: Loadouts are not guaranteed to work with units provided by Mods. If you need a specific mod supported, open an issue with [grad-loadout](https://github.com/gruppe-adler/grad-loadout).
+
+## Available Loadouts
+All of the included loadouts need [gruppe_adler_mod](https://github.com/gruppe-adler/gruppe_adler_mod) for its medical items. Most loadouts will also need other mods.
+
+### Available Loadout Factions
 These factions are available (see also the `factions` directory):
 
-| name        | description                  | author |
+| Name        | Description                  | Author |
 |-------------|------------------------------|--------|
 | BwFleck     | Bundeswehr Flecktarn         | McDiod |
 | BwTrop      | Bundeswehr Tropentarn        | McDiod |
@@ -78,13 +100,20 @@ These factions are available (see also the `factions` directory):
 | Vietcong    | Vietnamese Guerilla          | Eras   |
 
 
-**HINT**: If you do not know which faction your editor-created units belong to, have a look into the [BI Community Wiki](https://community.bistudio.com/wiki/Arma_3_CfgVehicles_WEST)
+### Rank Dependent Loadout
+The medic loadouts are rank dependent. All medics carry surgical kits.
 
-**NOTE**: Loadouts are not guaranteed to work with units provided by Mods. If you need a specific mod supported, open an issue with [grad-loadout](https://github.com/gruppe-adler/grad-loadout).
+Rank               | Description
+-------------------|--------------------------------------------------------------------------------------------
+Private            | Combat medic loadout. Enough tourniquets and bandages for first aid and combat trauma care.
+Corporal           | Medic loadout. More of everything as well as some saline.
+Sergeant and above | Surgeon loadout. Arm-leg-kit for broken limbs and more saline.
 
-Von den angegebenen Kategorien haben die folgenden Einheiten ein Standardloadout:
+### Units
 
-Englisch:                     | Deutsch:                                 | Funktion:
+Of the aforementioned factions, only the following unit types have a loadout:
+
+English                       | Deutsch                                  | Function
 ------------------------------|------------------------------------------|----------------------------------------
 Asst. Autorifleman            | Zweiter Automatik Schütze                | Munitionsträger für LMG
 Asst. Gunner (HMG/GMG)        | Zweiter Schütze (Mk30/GMG)               | Munitionsträger für MMG
@@ -104,12 +133,12 @@ Rifleman (AT)                 | Schütze (Panzerabwehr)                   | Sch�
 Squad Leader                  | Truppführer                              | Truppführer
 Team Leader                   | Teamleader                               | Gruppenführer und Zugführer
 
-Sowie derzeit nur bei den russischen Faktionen:
+And currently only for the Russian factions:
 
-Englisch:                     | Deutsch:                                 | Funktion:
-------------------------------|------------------------------------------|----------------------------------------
-Sniper                        | Sniper                                   | Sniper
-Spotter                       | Spotter                                  | Spotter
+English | Deutsch | Function
+--------|---------|---------
+Sniper  | Sniper  | Sniper
+Spotter | Spotter | Spotter
 
 
 --------------------------------------------------------------------------------
