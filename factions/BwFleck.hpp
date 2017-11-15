@@ -73,8 +73,7 @@ class BWFleck {
         class soldier_AAR_F: Soldier_F {
             backpack = "ARC_GER_Kitbag_compact_Flecktarn";
             addItemsToBackpack[] = {
-                LIST_2("rhs_200rnd_556x45_M_SAW"),
-                "rhs_200rnd_556x45_T_SAW"
+                LIST_4("hlc_100Rnd_762x51_T_MG3")
             };
         };
 
@@ -105,14 +104,13 @@ class BWFleck {
 
         //Autorifleman
         class soldier_AR_F: Soldier_F {
-            primaryWeapon = "rhs_weap_m249_pip_S";
-            primaryWeaponMagazine = "rhs_200rnd_556x45_T_SAW";
+            primaryWeapon = "hlc_lmg_MG3";
+            primaryWeaponMagazine = "hlc_100Rnd_762x51_T_MG3";
             handgunWeapon = "";
             handgunWeaponMagazine = "";
             backpack = "ARC_GER_Kitbag_compact_Flecktarn";
             addItemsToBackpack[] = {
-                LIST_2("rhs_200rnd_556x45_M_SAW"),
-                "rhsusf_100Rnd_556x45_soft_pouch",
+                LIST_4("hlc_100Rnd_762x51_T_MG3")
             };
             addItemsToVest[] = {
                 LIST_2("HandGrenade"),
@@ -223,12 +221,12 @@ class BWFleck {
 
         //Missile Specialist (AT)
         class soldier_AT_F: Soldier_F {
-            secondaryWeapon = "rhs_weap_fgm148";
-            secondaryWeaponMagazine = "rhs_fgm148_magazine_AT";
-            backpack = "ARC_GER_Backpack_Carryall_Flecktarn";
-            addItemsToBackpack[] = {
-                "rhs_fgm148_magazine_AT"
-            };
+            secondaryWeapon = "rhs_weap_maaws";
+          secondaryWeaponMagazine = "rhs_mag_maaws_HEAT";
+          backpack = "ARC_GER_Backpack_Carryall_Flecktarn";
+          addItemsToBackpack[] = {
+              LIST_2("rhs_mag_maaws_HEAT")
+          };
         };
 
         //Repair Specialist
@@ -242,9 +240,20 @@ class BWFleck {
 
         //Rifleman (AT)
         class soldier_LAT_F: Soldier_F {
-            secondaryWeapon = "rhs_weap_M136";
+          secondaryWeapon = "rhs_weap_M136";
         };
-
+	    
+	//LMG
+	class Soldier_lite_F: Soldier_F {
+		primaryWeapon = "rhs_weap_m249_pip_S";
+            primaryWeaponMagazine = "rhs_200rnd_556x45_T_SAW";
+             handgunWeapon = "";
+             handgunWeaponMagazine = "";
+             backpack = "ARC_GER_Kitbag_compact_Flecktarn";
+             addItemsToBackpack[] = {
+                LIST_4("rhs_200rnd_556x45_M_SAW"),
+                "rhsusf_100Rnd_556x45_soft_pouch",	
+	};
         //Squad Leader
         class Soldier_SL_F: Soldier_F {
             backpack = "tf_rt1523g_big_bwmod";

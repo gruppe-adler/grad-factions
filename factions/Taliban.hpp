@@ -1,5 +1,5 @@
 #ifdef NIGHTVISION
-  #define NVITEM "rhs_1PN138"
+  #define NVITEM "NVGoggles_OPFOR"
 #else
   #define NVITEM ""
 #endif
@@ -15,113 +15,126 @@
 #endif
 
 #ifdef SUPPRESSORS
-  #define SUPPRESSORITEM "rhs_acc_pbs1"
+  #define SUPPRESSORITEM "rhs_acc_tgpa"
 #else
-  #define SUPPRESSORITEM ""
+  #define SUPPRESSORITEM "rhs_acc_dtk"
 #endif
 
 class Taliban {
 	  class AllUnits {
-		    uniform = "LOP_U_AM_Fatigue_01";
-		    vest = "V_BandollierB_khk";
-		    backpack = "";
-		    headgear = "LOP_H_Turban";
-		    primaryWeapon = "rhs_weap_m70b1";
-            primaryWeaponMagazine = "rhs_30Rnd_762x39mm";
-		    primaryWeaponOptics = "";
-		    primaryWeaponPointer = LLITEM;
-		    primaryWeaponMuzzle = SUPPRESSORITEM;
-            primaryWeaponUnderbarrel = "";
-    		primaryWeaponUnderbarrelMagazine = "";
-            secondaryWeapon = "";
-            secondaryWeaponMagazine = "";
-		    handgunWeapon = "";
-		    binoculars = "Binocular";
-		    map = "ItemMap";
-		    compass = "ItemCompass";
-		    watch = "ItemWatch";
-		    gps = "";
-		    radio = "tf_fadak";
-		    nvgoggles = NVITEM;
+      uniform = "LOP_U_AM_Fatigue_01";
+      vest = "V_BandollierB_khk";
+      backpack = "";
+      headgear = "LOP_H_Turban";
+      primaryWeapon = "rhs_weap_ak74m";
+      primaryWeaponMagazine = "rhs_30Rnd_545x39_AK";
+      primaryWeaponMuzzle = SUPPRESSORITEM;
+      primaryWeaponPointer = LLITEM;
+      primaryWeaponOptics = "rhs_acc_pkas";
+      primaryWeaponUnderbarrel = "";
+		   primaryWeaponUnderbarrelMagazine = "";
+      secondaryWeapon = "";
+      secondaryWeaponMagazine = "";
+      handgunWeapon = "rhs_weap_makarov_pm";
+      handgunWeaponMagazine = "rhs_mag_9x18_8_57N181S";
+      binoculars = "";
+      map = "ItemMap";
+      compass = "ItemCompass";
+      watch = "";
+      gps = "";
+      radio = "";
+      nvgoggles = "";
     };
     class Type {
         //Rifleman
         class Soldier_F {
-            uniform = "LOP_U_AM_Fatigue_02";
+          uniform = "LOP_U_AM_Fatigue_02";
             addItemsToUniform[] = {
-                LIST_2("ACE_Cabletie"),
-                LIST_8("ACE_fieldDressing"),
-                LIST_4("ACE_morphine"),
-                "ACE_Flashlight_KSF1",
-                "rhs_mag_rdg2_white"
+                LIST_2("rhs_mag_9x18_8_57N181S"),
+
+                LIST_4("ACE_packingBandage"),
+                LIST_4("ACE_elasticBandage"),
+                LIST_4("ACE_quikclot"),
+                LIST_4("ACE_tourniquet"),
+                LIST_2("ACE_morphine"),
+                LIST_2("ACE_epinephrine")
             };
             addItemsToVest[] = {
-                LIST_4("rhs_30Rnd_762x39mm"),
-                "rhs_mag_rgd5"
+                LIST_2("rhs_mag_rgd5"),
+                LIST_2("rhs_mag_rdg2_white"),
+                LIST_7("rhs_30Rnd_545x39_AK")
             };
         };
-
         //Asst. Autorifleman
-        class soldier_AAR_F: Soldier_F {
-            uniform = "LOP_U_AM_Fatigue_03";
-            backpack = "rhs_sidor";
-            addItemsToBackpack[] = {
-                LIST_3("rhs_100Rnd_762x54mmR_green")
-            };
+        class Soldier_AAR_F: Soldier_F {
+          uniform = "LOP_U_AM_Fatigue_03";
+          primaryWeapon = "LOP_Weap_LeeEnfield";
+          primaryWeaponMagazine = "LOP_10rnd_77mm_mag";
+          backpack = "rhs_sidor";
+          addItemsToVest[] = {
+              LIST_2("rhs_mag_rgd5"),
+              LIST_2("rhs_mag_rdg2_white"),
+              LIST_15("LOP_10rnd_77mm_mag")
+          };
+          addItemsToBackpack[] = {
+              LIST_3("rhs_100Rnd_762x54mmR_green")
+          };
         };
-
         //Asst. Gunner (HMG/GMG)
-        class support_AMG_F: Soldier_F {
-
-        };
-
+        class support_AMG_F: Soldier_AAR_F {};
         //Asst. Missile Specialist (AA)
-        class soldier_AAA_F: Soldier_F {
+        class Soldier_AAA_F: Soldier_F {
             uniform = "LOP_U_AM_Fatigue_03";
-            backpack = "B_Carryall_khk";
-            addItemsToBackpack[] = {
-                LIST_3("rhs_mag_9k38_rocket")
-            };
-        };
-
-        //Asst. Missile Specialist (AT)
-        class soldier_AAT_F: Soldier_F {
-            uniform = "LOP_U_AM_Fatigue_04";
             backpack = "rhs_rpg_empty";
             addItemsToBackpack[] = {
-                LIST_3("rhs_rpg7_PG7VR_mag")
+                LIST_2("rhs_mag_9k38_rocket")
             };
         };
-
+        //Asst. Missile Specialist (AT)
+        class Soldier_AAT_F: Soldier_F {
+          uniform = "LOP_U_AM_Fatigue_04";
+            backpack = "rhs_sidor";
+            addItemsToBackpack[] = {
+                LIST_2("rhs_rpg7_PG7VL_mag")
+            };
+        };
         //Autorifleman
-        class soldier_AR_F: Soldier_F {
-            uniform = "LOP_U_AM_Fatigue_03";
-            primaryWeapon = "rhs_weap_pkm";
-            primaryWeaponMagazine = "rhs_100Rnd_762x54mmR_green";
+        class Soldier_AR_F: Soldier_F {
+          uniform = "LOP_U_AM_Fatigue_03";
+            primaryWeapon = "rhs_weap_pkp";
+            primaryWeaponMagazine = "rhs_100Rnd_762x54mmR_7N26";
             backpack = "rhs_sidor";
             addItemsToBackpack[] = {
                 LIST_3("rhs_100Rnd_762x54mmR_green")
             };
             addItemsToVest[] = {
-                "rhs_mag_rgd5"
+                LIST_2("rhs_mag_rgd5"),
+                LIST_2("rhs_mag_rdg2_white")
             };
         };
-
         //Combat Life Saver
         class medic_F: Soldier_F {
-            uniform = "LOP_U_AM_Fatigue_02";
-            primaryWeapon = "rhs_weap_m92_fold";
+          uniform = "LOP_U_AM_Fatigue_02";
+            handgunWeapon = "";
+            handgunWeaponMagazine = "";
             backpack = "rhs_sidor";
-            addItemsToBackpack[] = {
-                LIST_5("ACE_bloodIV"),
-                LIST_15("ACE_epinephrine"),
-                LIST_20("ACE_morphine"),
-                LIST_20("ACE_fieldDressing"),
-                LIST_20("ACE_fieldDressing"),
-                LIST_3("SmokeShell")
+            addItemsToUniform[] = {
+                "ACE_MapTools",
+                LIST_2("ACE_CableTie"),
+                "ACE_Flashlight_KSF1"
+            };
+            class Rank {
+                class PRIVATE {
+                    GRAD_FACTIONS_MEDICITEMS_CFR
+                };
+                class CORPORAL {
+                    GRAD_FACTIONS_MEDICITEMS_SQ
+                };
+                class SERGEANT {
+                    GRAD_FACTIONS_MEDICITEMS_PT
+                };
             };
         };
-
         //Explosive Specialist
         class soldier_exp_F: Soldier_F {
             uniform = "LOP_U_AM_Fatigue_01";
