@@ -40,7 +40,7 @@ class BWTrop: BWFleck {
         };    
 
         class support_AMG_F: support_AMG_F {
-            backpack = "ARC_GER_Kitbag_compact_Tropentarn";
+          
         };
 
         class soldier_AAA_F: soldier_AAA_F {
@@ -74,7 +74,7 @@ class BWTrop: BWFleck {
         };
 	    
 	class support_MG_F: support_MG_F {
-            backpack = "ARC_GER_Kitbag_compact_Tropentarn";
+  
         };    
 
         class soldier_M_F: soldier_M_F {
