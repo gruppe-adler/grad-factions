@@ -78,14 +78,19 @@ class BWFleck {
             };
         };
 
-        //Asst. Gunner (HMG/GMG)
-        class support_AMG_F: Soldier_F {
+        //Asst. Gunner (MMG) / Ammo Bearer
+        class support_A_F: Soldier_F {
             backpack = "ARC_GER_Kitbag_compact_Flecktarn";
             addItemsToBackpack[] = {
-                LIST_2("rhsusf_100Rnd_762x51_m80a1epr"),
-                LIST_4("rhsusf_50Rnd_762x51_m62_tracer")
+                LIST_2("hlc_100Rnd_762x51_B_MG3"),
+                LIST_4("hlc_50Rnd_762x51_T_MG3")
             };
         };
+	    
+	//Asst. Gunner (HMG/GMG)
+        class support_AMG_F: Soldier_F {
+            backpack = "RHS_M2_MiniTripod_Bag";
+        };    
 
         //Asst. Missile Specialist (AA)
         class soldier_AAA_F: Soldier_F {
@@ -179,22 +184,27 @@ class BWFleck {
             };
         };
 
-        //Heavy Gunner
+        //Heavy Gunner (MMG)
         class HeavyGunner_F: Soldier_F {
-            primaryWeapon = "rhs_weap_m240G";
-            primaryWeaponMagazine = "rhsusf_50Rnd_762x51_m62_tracer";
+            primaryWeapon = "hlc_lmg_MG3_optic";
+            primaryWeaponMagazine = "hlc_50Rnd_762x51_T_MG3";
             handgunWeapon = "";
             handgunWeaponMagazine = "";
             backpack = "ARC_GER_Kitbag_compact_Flecktarn";
             addItemsToBackpack[] = {
-                LIST_2("rhsusf_100Rnd_762x51_m80a1epr"),
-                LIST_3("rhsusf_50Rnd_762x51_m62_tracer")
+                LIST_2("hlc_100Rnd_762x51_B_MG3"),
+                LIST_3("hlc_50Rnd_762x51_T_MG3")
             };
             addItemsToVest[] = {
                 LIST_2("HandGrenade"),
                 LIST_2("SmokeShell")
             };
         };
+	    
+	//Gunner (HMG/GMG)
+        class support_MG_F: Soldier_F {
+            backpack = "RHS_M2_Gun_Bag";
+        };      
 
         //Marksman
         class soldier_M_F: Soldier_F {
