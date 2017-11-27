@@ -94,7 +94,7 @@ class SOGBLACK {
 	//Asst. Gunner (HMG/GMG)
         class support_AMG_F: Soldier_F {
 			vest = "V_PlateCarrier1_blk";
-            backpack = "RHS_M2_Tripod_Bag";
+            backpack = "RHS_M2_MiniTripod_Bag";
         };
         //Asst. Missile Specialist (AA)
         class soldier_AAA_F: Soldier_F {
