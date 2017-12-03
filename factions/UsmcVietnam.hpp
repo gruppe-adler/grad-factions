@@ -80,7 +80,7 @@ class UsmcVietnam {
         };
 
         //Asst. Gunner (MMG) / Ammo Bearer
-        class support_A_F: Soldier_F {
+        class soldier_A_F: Soldier_F {
             backpack = "B_FieldPack_oli";
             addItemsToBackpack[] = {
                 LIST_2("rhsusf_100Rnd_762x51_m80a1epr"),

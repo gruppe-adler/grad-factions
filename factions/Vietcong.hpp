@@ -77,7 +77,7 @@ class Vietcong {
             };
         };
         //Asst. Gunner (MMG) / Ammo Bearer
-        class support_A_F: Soldier_AAR_F {};
+        class soldier_A_F: Soldier_AAR_F {};
 
         //Asst. Gunner (HMG/GMG)
         class support_AMG_F: Soldier_F {
@@ -296,7 +296,7 @@ class Vietcong {
                 LIST_4("rhs_VOG25")
             };
         };
-        
+
     };
     class Rank {
         class LIEUTENANT {

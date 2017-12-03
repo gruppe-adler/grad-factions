@@ -78,7 +78,7 @@ class RUFlora {
         };
 
         //Asst. Gunner (MMG) / Ammo Bearer
-        class support_A_F: Soldier_AAR_F {};
+        class soldier_A_F: Soldier_AAR_F {};
 
         //Asst. Gunner (HMG/GMG)
         class support_AMG_F: Soldier_F {
@@ -295,7 +295,7 @@ class RUFlora {
                 "ACE_SpottingScope"
             };
         };
-        
+
         //Team Leader
         class Soldier_TL_F: Soldier_SL_F {
             backpack = "rhs_assault_umbts";

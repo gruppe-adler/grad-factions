@@ -33,7 +33,7 @@ class USMPT: USOCP {
         class soldier_AAR_F: soldier_AAR_F {
             backpack = "B_Kitbag_rgr";
         };
-        class support_A_F: support_A_F {
+        class soldier_A_F: soldier_A_F {
             backpack = "B_Kitbag_rgr";
         };
         class support_AMG_F: support_AMG_F {

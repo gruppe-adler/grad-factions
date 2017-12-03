@@ -79,7 +79,7 @@ class BWFleck {
         };
 
         //Asst. Gunner (MMG) / Ammo Bearer
-        class support_A_F: Soldier_F {
+        class soldier_A_F: Soldier_F {
             backpack = "ARC_GER_Kitbag_compact_Flecktarn";
             addItemsToBackpack[] = {
                 LIST_2("hlc_100Rnd_762x51_B_MG3"),

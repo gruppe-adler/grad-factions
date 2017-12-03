@@ -34,7 +34,7 @@ class USUCP: USOCP {
         class soldier_AAR_F: soldier_AAR_F {
             backpack = "rhsusf_assault_eagleaiii_ucp";
         };
-        class support_A_F: support_AMG_F {
+        class soldier_A_F: soldier_A_F {
             backpack = "rhsusf_assault_eagleaiii_ucp";
         };
         class support_AMG_F: support_AMG_F {
@@ -63,7 +63,7 @@ class USUCP: USOCP {
             backpack = "rhsusf_assault_eagleaiii_ucp";
         };
         class support_MG_F: support_MG_F {
-        }; 
+        };
         class soldier_M_F: soldier_M_F {
             primaryWeapon = "rhs_weap_sr25_ec_d";
         };
