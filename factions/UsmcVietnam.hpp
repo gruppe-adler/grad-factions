@@ -27,16 +27,16 @@ class UsmcVietnam {
 		backpack = "";
 		headgear = "rhsgref_helmet_M1_bare";
 		primaryWeapon = "rhs_weap_m16a4_carryhandle";
-        primaryWeaponMagazine = "rhs_mag_30Rnd_556x45_Mk318_Stanag";
+        	primaryWeaponMagazine = "rhs_mag_30Rnd_556x45_Mk318_Stanag";
 		primaryWeaponOptics = "";
 		primaryWeaponPointer = LLITEM;
 		primaryWeaponMuzzle = SUPPRESSORITEM;
-        primaryWeaponUnderbarrel = "";
+        	primaryWeaponUnderbarrel = "";
 		primaryWeaponUnderbarrelMagazine = "";
-        secondaryWeapon = "";
-        secondaryWeaponMagazine = "";
+        	secondaryWeapon = "";
+        	secondaryWeaponMagazine = "";
 		handgunWeapon = "rhsusf_weap_m1911a1";
-        handgunWeaponMagazine = "rhsusf_mag_7x45acp_MHP";
+        	handgunWeaponMagazine = "rhsusf_mag_7x45acp_MHP";
 		binoculars = "";
 		map = "ItemMap";
 		compass = "ItemCompass";
@@ -79,14 +79,19 @@ class UsmcVietnam {
             };
         };
 
-        //Asst. Gunner (HMG/GMG)
-        class support_AMG_F: Soldier_F {
+        //Asst. Gunner (MMG) / Ammo Bearer
+        class support_A_F: Soldier_F {
             backpack = "B_FieldPack_oli";
             addItemsToBackpack[] = {
                 LIST_2("rhsusf_100Rnd_762x51_m80a1epr"),
                 LIST_4("rhsusf_50Rnd_762x51_m62_tracer")
             };
         };
+	    
+	 //Asst. Gunner (HMG/GMG)
+        class support_AMG_F: Soldier_F {
+            backpack = "RHS_M2_MiniTripod_Bag";
+	};    
 
         //Asst. Missile Specialist (AA)
         class soldier_AAA_F: Soldier_F {
@@ -184,7 +189,7 @@ class UsmcVietnam {
             };
         };
 
-        //Heavy Gunner
+        //Heavy Gunner (MMG)
         class HeavyGunner_F: Soldier_F {
             headgear = "H_Bandanna_gry";
             primaryWeapon = "rhs_weap_m240G";
@@ -201,6 +206,11 @@ class UsmcVietnam {
                 LIST_2("SmokeShell")
             };
         };
+	    
+	//Gunner (HMG/GMG)
+        class support_MG_F: Soldier_F {
+            backpack = "RHS_M2_Gun_Bag";	
+	};     
 
         //Marksman
         class soldier_M_F: Soldier_F {

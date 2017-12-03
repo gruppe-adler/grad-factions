@@ -83,14 +83,18 @@ class SOGBLACK {
                 "rhsusf_100Rnd_556x45_soft_pouch"
             };
         };
-        //Asst. Gunner (HMG/GMG)
-        class support_AMG_F: Soldier_F {
+        //Asst. Gunner (MMG) / Ammo Bearer
+        class soldier_A_F: Soldier_F {
 			vest = "V_PlateCarrier1_blk";
             backpack = "ga_kitbag_black";
             addItemsToBackpack[] = {
                 LIST_4("rhsusf_100Rnd_762x51_m62_tracer"),
                 "rhsusf_100Rnd_762x51"
             };
+	//Asst. Gunner (HMG/GMG)
+        class support_AMG_F: Soldier_F {
+			vest = "V_PlateCarrier1_blk";
+            backpack = "RHS_M2_MiniTripod_Bag";
         };
         //Asst. Missile Specialist (AA)
         class soldier_AAA_F: Soldier_F {
@@ -169,7 +173,7 @@ class SOGBLACK {
                 LIST_2("rhs_mag_m713_Red")
             };
         };
-        //Heavy Gunner
+        //Heavy Gunner (MMG)
         class HeavyGunner_F: Soldier_F {
             primaryWeapon = "rhs_weap_m240B";
             primaryWeaponMagazine = "rhsusf_100Rnd_762x51";
@@ -187,6 +191,11 @@ class SOGBLACK {
                 "rhsusf_100Rnd_762x51"
             };
         };
+	//Gunner (HMG/GMG)
+        class support_MG_F: Soldier_F {
+			vest = "V_PlateCarrier1_blk";
+            backpack = "RHS_M2_Gun_Bag";	
+        };	
         //Marksman
         class soldier_M_F: Soldier_F {
             primaryWeapon = "rhs_weap_sr25_ec";

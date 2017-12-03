@@ -76,8 +76,14 @@ class Vietcong {
                 LIST_3("rhs_100Rnd_762x54mmR")
             };
         };
-        //Asst. Gunner (HMG/GMG)
-        class support_AMG_F: Soldier_AAR_F {};
+        //Asst. Gunner (MMG) / Ammo Bearer
+        class support_A_F: Soldier_AAR_F {};
+	    
+  	//Asst. Gunner (HMG/GMG)
+        class support_AMG_F: Soldier_F {
+            backpack = "RHS_DShkM_TripodLow_Bag";
+	};
+	    
         //Asst. Missile Specialist (AA)
         class Soldier_AAA_F: Soldier_F {
             backpack = "rhs_sidor";
@@ -154,8 +160,14 @@ class Vietcong {
                 LIST_2("rhs_VG40MD_Red")
             };
         };
-        //Heavy Gunner
+        //Heavy Gunner (MMG)
         class HeavyGunner_F: Soldier_AR_F {};
+	    
+	//Gunner (HMG/GMG)
+	class support_MG_F: Soldier_F {
+            backpack = "RHS_DShkM_Gun_Bag";	
+	};     
+	    
         //Marksman
         class Soldier_M_F: Soldier_F {
             primaryWeapon = "rhs_weap_m76";
