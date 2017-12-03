@@ -87,11 +87,11 @@ class UsmcVietnam {
                 LIST_4("rhsusf_50Rnd_762x51_m62_tracer")
             };
         };
-	    
-	 //Asst. Gunner (HMG/GMG)
+
+        //Asst. Gunner (HMG/GMG)
         class support_AMG_F: Soldier_F {
             backpack = "RHS_M2_MiniTripod_Bag";
-	};    
+        };
 
         //Asst. Missile Specialist (AA)
         class soldier_AAA_F: Soldier_F {
@@ -206,11 +206,11 @@ class UsmcVietnam {
                 LIST_2("SmokeShell")
             };
         };
-	    
-	//Gunner (HMG/GMG)
+
+        //Gunner (HMG/GMG)
         class support_MG_F: Soldier_F {
-            backpack = "RHS_M2_Gun_Bag";	
-	};     
+            backpack = "RHS_M2_Gun_Bag";
+        };
 
         //Marksman
         class soldier_M_F: Soldier_F {
@@ -317,8 +317,8 @@ class UsmcVietnam {
                 LIST_2("SmokeShellYellow"),
                 LIST_2("SmokeShell")
             };
-
         };
+
 		class Helipilot_F: Soldier_F {
 			headgear = "rhssaf_helmet_hgu56p";
 			backpack = "tf_rt1523g_black";
@@ -337,7 +337,6 @@ class UsmcVietnam {
 		class Soldier_UAV_F: Soldier_F {
 			backpack = "tf_rt1523g_black";
 			binoculars = "Binocular";
-
         };
 
     };

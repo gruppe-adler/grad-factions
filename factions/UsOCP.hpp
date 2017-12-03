@@ -68,6 +68,7 @@ class USOCP {
                 LIST_7("30Rnd_556x45_Stanag")
             };
         };
+
         //Asst. Autorifleman
         class soldier_AAR_F: Soldier_F {
             backpack = "rhsusf_assault_eagleaiii_ocp";
@@ -76,19 +77,21 @@ class USOCP {
                 "rhsusf_100Rnd_556x45_soft_pouch"
             };
         };
-	
-	//Asst. Gunner (MMG) / Ammo Bearer
+
+    	//Asst. Gunner (MMG) / Ammo Bearer
         class soldier_A_F: Soldier_F {
             backpack = "rhsusf_assault_eagleaiii_ocp";
             addItemsToBackpack[] = {
                 LIST_2("rhsusf_100Rnd_762x51_m62_tracer"),
                 "rhsusf_100Rnd_762x51"
-	};    
-	    
+            };
+    	};
+
         //Asst. Gunner (HMG/GMG)
         class support_AMG_F: Soldier_F {
             backpack = "RHS_M2_MiniTripod_Bag";
         };
+
         //Asst. Missile Specialist (AA)
         class soldier_AAA_F: Soldier_F {
             backpack = "rhsusf_assault_eagleaiii_ocp";
@@ -96,6 +99,7 @@ class USOCP {
                 "rhs_fim92_mag"
             };
         };
+
         //Asst. Missile Specialist (AT)
         class soldier_AAT_F: Soldier_F {
             backpack = "rhsusf_assault_eagleaiii_ocp";
@@ -103,6 +107,7 @@ class USOCP {
                 "rhs_mag_smaw_HEAA"
             };
         };
+
         //Autorifleman
         class soldier_AR_F: Soldier_F {
             primaryWeapon = "rhs_weap_m249_pip_S";
@@ -120,6 +125,7 @@ class USOCP {
                 LIST_2("SmokeShell")
             };
         };
+
         //Combat Life Saver
         class medic_F: Soldier_F {
             vest = "rhsusf_iotv_ocp_Medic";
@@ -152,6 +158,7 @@ class USOCP {
                 class COLONEL: SERGEANT {};
             };
         };
+
         //Explosive Specialist
         class soldier_exp_F: Soldier_F {
             backpack = "rhsusf_assault_eagleaiii_ocp";
@@ -162,6 +169,7 @@ class USOCP {
                 LIST_3("DemoCharge_Remote_Mag")
             };
         };
+
         //Grenadier
         class Soldier_GL_F: Soldier_F {
             primaryWeapon = "rhs_weap_m4a1_blockII_M203_bk";
@@ -174,6 +182,7 @@ class USOCP {
                 LIST_2("rhs_mag_m713_Red")
             };
         };
+
         //Heavy Gunner (MMG)
         class HeavyGunner_F: Soldier_F {
             primaryWeapon = "rhs_weap_m240B";
@@ -190,12 +199,12 @@ class USOCP {
                 LIST_2("SmokeShell")
             };
         };
-		
-	//Gunner (HMG/GMG)
+
+    	//Gunner (HMG/GMG)
         class support_MG_F: Soldier_F {
-            backpack = "RHS_M2_Gun_Bag";	
-	}; 	
-		
+            backpack = "RHS_M2_Gun_Bag";
+    	};
+
         //Marksman
         class soldier_M_F: Soldier_F {
             primaryWeapon = "rhs_weap_sr25_ec";
@@ -211,6 +220,7 @@ class USOCP {
                 LIST_7("rhsusf_20Rnd_762x51_m118_special_Mag")
             };
         };
+
         //Missile Specialist (AA)
         class soldier_AA_F: Soldier_F {
             secondaryWeapon = "rhs_weap_fim92";
@@ -220,6 +230,7 @@ class USOCP {
                 "rhs_fim92_mag"
             };
         };
+
         //Missile Specialist (AT)
         class soldier_AT_F: Soldier_F {
             secondaryWeapon = "rhs_weap_fgm148";
@@ -229,6 +240,7 @@ class USOCP {
                 "rhs_fgm148_magazine_AT"
             };
         };
+
         //Repair Specialist
         class soldier_repair_F: Soldier_F {
             backpack = "rhsusf_assault_eagleaiii_ocp";
@@ -237,10 +249,12 @@ class USOCP {
                 "ACE_wirecutter"
             };
         };
+
         //Rifleman (AT)
         class soldier_LAT_F: Soldier_F {
             secondaryWeapon = "rhs_weap_M136";
         };
+
         //Squad Leader
         class Soldier_SL_F: Soldier_F {
             backpack = "tf_rt1523g_rhs";
@@ -255,6 +269,7 @@ class USOCP {
                 LIST_2("SmokeShell")
             };
         };
+
         //Team Leader
         class Soldier_TL_F: Soldier_F {
             primaryWeapon = "rhs_weap_m4a1_blockII_M203_bk";

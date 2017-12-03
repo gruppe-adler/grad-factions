@@ -35,7 +35,7 @@ class USMPT: USOCP {
         };
         class support_A_F: support_A_F {
             backpack = "B_Kitbag_rgr";
-        }; 
+        };
         class support_AMG_F: support_AMG_F {
         };
         class soldier_AAA_F: soldier_AAA_F {
@@ -62,7 +62,7 @@ class USMPT: USOCP {
             backpack = "B_Kitbag_rgr";
         };
         class support_MG_F: support_MG_F {
-        }; 
+        };
         class soldier_M_F: soldier_M_F {
             primaryWeapon = "rhs_weap_m14ebrri";
             vest = "rhsusf_spc_patchless";

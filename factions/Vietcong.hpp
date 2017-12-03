@@ -78,12 +78,12 @@ class Vietcong {
         };
         //Asst. Gunner (MMG) / Ammo Bearer
         class support_A_F: Soldier_AAR_F {};
-	    
-  	//Asst. Gunner (HMG/GMG)
+
+        //Asst. Gunner (HMG/GMG)
         class support_AMG_F: Soldier_F {
             backpack = "RHS_DShkM_TripodLow_Bag";
-	};
-	    
+        };
+
         //Asst. Missile Specialist (AA)
         class Soldier_AAA_F: Soldier_F {
             backpack = "rhs_sidor";
@@ -91,6 +91,7 @@ class Vietcong {
                 LIST_2("rhs_mag_9k38_rocket")
             };
         };
+
         //Asst. Missile Specialist (AT)
         class Soldier_AAT_F: Soldier_F {
             backpack = "rhs_sidor";
@@ -98,6 +99,7 @@ class Vietcong {
                 LIST_2("rhs_rpg7_PG7VL_mag")
             };
         };
+
         //Autorifleman
         class Soldier_AR_F: Soldier_F {
             primaryWeapon = "rhs_weap_pkm";
@@ -111,6 +113,7 @@ class Vietcong {
                 LIST_2("rhs_mag_rdg2_white")
             };
         };
+
         //Combat Life Saver
         class medic_F: Soldier_F {
 			headgear = "H_Beret_blk";
@@ -138,6 +141,7 @@ class Vietcong {
                 class COLONEL: SERGEANT {};
             };
         };
+
         //Explosive Specialist
         class Soldier_exp_F: Soldier_F {
 			headgear = "H_Beret_blk";
@@ -147,6 +151,7 @@ class Vietcong {
                 LIST_3("APERSTripMine_Wire_Mag")
             };
         };
+
         //Grenadier
         class Soldier_GL_F: Soldier_F {
             primaryWeapon = "rhs_weap_akm_gp25";
@@ -160,14 +165,15 @@ class Vietcong {
                 LIST_2("rhs_VG40MD_Red")
             };
         };
+
         //Heavy Gunner (MMG)
         class HeavyGunner_F: Soldier_AR_F {};
-	    
-	//Gunner (HMG/GMG)
-	class support_MG_F: Soldier_F {
-            backpack = "RHS_DShkM_Gun_Bag";	
-	};     
-	    
+
+        //Gunner (HMG/GMG)
+        class support_MG_F: Soldier_F {
+            backpack = "RHS_DShkM_Gun_Bag";
+        };
+
         //Marksman
         class Soldier_M_F: Soldier_F {
             primaryWeapon = "rhs_weap_m76";
@@ -181,6 +187,7 @@ class Vietcong {
                 LIST_10("rhssaf_10Rnd_792x57_m76_tracer")
             };
         };
+
         //Missile Specialist (AA)
         class Soldier_AA_F: Soldier_F {
 			headgear = "H_Beret_blk";
@@ -192,6 +199,7 @@ class Vietcong {
                 "rhs_mag_9k38_rocket"
             };
         };
+
         //Missile Specialist (AT)
         class Soldier_AT_F: Soldier_F {
 			headgear = "H_Beret_blk";
@@ -204,6 +212,7 @@ class Vietcong {
                 "rhs_rpg7_OG7V_mag"
             };
         };
+
         //Repair Specialist
         class Soldier_repair_F: Soldier_F {
             primaryWeapon = "rhs_weap_akm";
@@ -213,10 +222,12 @@ class Vietcong {
                 "ACE_wirecutter"
             };
         };
+
         //Rifleman (AT)
         class Soldier_LAT_F: Soldier_F {
             secondaryWeapon = "rhs_weap_rpg26";
         };
+
         //Sniper
         class Sniper_F: Soldier_F {
             primaryWeapon = "rhs_weap_m76";
@@ -238,6 +249,7 @@ class Vietcong {
                 "ACE_RangeCard"
             };
         };
+
         //Squad Leader
         class Soldier_SL_F: Soldier_F {
 			headgear = "LOP_H_SLA_Beret";
@@ -250,6 +262,7 @@ class Vietcong {
                 LIST_4("rhs_VG40MD_White")
             };
         };
+
         //Spotter
         class Spotter_F: Soldier_F {
             backpack = "rhs_sidor";
@@ -270,6 +283,7 @@ class Vietcong {
                 "ACE_Tripod",
             };
         };
+
         //Team Leader
         class Soldier_TL_F: Soldier_SL_F {
 			headgear = "LOP_H_SLA_Beret";
@@ -282,6 +296,7 @@ class Vietcong {
                 LIST_4("rhs_VOG25")
             };
         };
+        
     };
     class Rank {
         class LIEUTENANT {

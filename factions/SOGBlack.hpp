@@ -74,6 +74,7 @@ class SOGBLACK {
                 LIST_10("rhs_mag_30Rnd_556x45_M855A1_Stanag_No_Tracer")
             };
         };
+
         //Asst. Autorifleman
         class soldier_AAR_F: Soldier_F {
 			vest = "V_PlateCarrier1_blk";
@@ -83,6 +84,7 @@ class SOGBLACK {
                 "rhsusf_100Rnd_556x45_soft_pouch"
             };
         };
+
         //Asst. Gunner (MMG) / Ammo Bearer
         class soldier_A_F: Soldier_F {
 			vest = "V_PlateCarrier1_blk";
@@ -91,11 +93,14 @@ class SOGBLACK {
                 LIST_4("rhsusf_100Rnd_762x51_m62_tracer"),
                 "rhsusf_100Rnd_762x51"
             };
-	//Asst. Gunner (HMG/GMG)
+        };
+
+        //Asst. Gunner (HMG/GMG)
         class support_AMG_F: Soldier_F {
 			vest = "V_PlateCarrier1_blk";
             backpack = "RHS_M2_MiniTripod_Bag";
         };
+
         //Asst. Missile Specialist (AA)
         class soldier_AAA_F: Soldier_F {
 			vest = "V_PlateCarrier1_blk";
@@ -104,6 +109,7 @@ class SOGBLACK {
                 "rhs_fim92_mag"
             };
         };
+
         //Asst. Missile Specialist (AT)
         class soldier_AAT_F: Soldier_F {
 			vest = "V_PlateCarrier1_blk";
@@ -112,6 +118,7 @@ class SOGBLACK {
                 "rhs_fgm148_magazine_AT"
             };
         };
+
         //Autorifleman
         class soldier_AR_F: Soldier_F {
             primaryWeapon = "rhs_weap_m249_pip_S_para";
@@ -126,6 +133,7 @@ class SOGBLACK {
                 "rhsusf_100Rnd_556x45_soft_pouch"
             };
         };
+
         //Combat Life Saver
         class medic_F: Soldier_F {
 			vest = "V_TacVestIR_blk";
@@ -150,6 +158,7 @@ class SOGBLACK {
                 class COLONEL: SERGEANT {};
             };
         };
+
         //Explosive Specialist
         class soldier_exp_F: Soldier_F {
 			vest = "V_PlateCarrier1_blk";
@@ -161,6 +170,7 @@ class SOGBLACK {
                 LIST_3("DemoCharge_Remote_Mag")
             };
         };
+
         //Grenadier
         class Soldier_GL_F: Soldier_F {
             primaryWeapon = "rhs_weap_mk18_m320";
@@ -173,6 +183,7 @@ class SOGBLACK {
                 LIST_2("rhs_mag_m713_Red")
             };
         };
+
         //Heavy Gunner (MMG)
         class HeavyGunner_F: Soldier_F {
             primaryWeapon = "rhs_weap_m240B";
@@ -191,11 +202,13 @@ class SOGBLACK {
                 "rhsusf_100Rnd_762x51"
             };
         };
-	//Gunner (HMG/GMG)
+
+        //Gunner (HMG/GMG)
         class support_MG_F: Soldier_F {
 			vest = "V_PlateCarrier1_blk";
-            backpack = "RHS_M2_Gun_Bag";	
-        };	
+            backpack = "RHS_M2_Gun_Bag";
+        };
+
         //Marksman
         class soldier_M_F: Soldier_F {
             primaryWeapon = "rhs_weap_sr25_ec";
@@ -211,6 +224,7 @@ class SOGBLACK {
                 LIST_7("rhsusf_20Rnd_762x51_m118_special_Mag")
             };
         };
+
         //Missile Specialist (AA)
         class soldier_AA_F: Soldier_F {
             secondaryWeapon = "rhs_weap_fim92";
@@ -221,6 +235,7 @@ class SOGBLACK {
                 "rhs_fim92_mag"
             };
         };
+
         //Missile Specialist (AT)
         class soldier_AT_F: Soldier_F {
             secondaryWeapon = "rhs_weap_fgm148";
@@ -231,6 +246,7 @@ class SOGBLACK {
                 "rhs_fgm148_magazine_AT"
             };
         };
+
         //Repair Specialist
         class soldier_repair_F: Soldier_F {
 			vest = "V_PlateCarrier1_blk";
@@ -240,10 +256,12 @@ class SOGBLACK {
                 "ACE_wirecutter"
             };
         };
+
         //Rifleman (AT)
         class soldier_LAT_F: Soldier_F {
             secondaryWeapon = "rhs_weap_M136";
         };
+
         //Squad Leader
         class Soldier_SL_F: Soldier_F {
 			vest = "V_PlateCarrier1_blk";
@@ -257,6 +275,7 @@ class SOGBLACK {
                 LIST_2("SmokeShell")
             };
         };
+
         //Team Leader
         class Soldier_TL_F: Soldier_F {
             primaryWeapon = "rhs_weap_mk18_m320";
@@ -271,5 +290,6 @@ class SOGBLACK {
                 LIST_2("1Rnd_HE_Grenade_shell")
             };
         };
+        
     };
 };

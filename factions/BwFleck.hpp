@@ -86,11 +86,11 @@ class BWFleck {
                 LIST_4("hlc_50Rnd_762x51_T_MG3")
             };
         };
-	    
-	//Asst. Gunner (HMG/GMG)
+
+        //Asst. Gunner (HMG/GMG)
         class support_AMG_F: Soldier_F {
             backpack = "RHS_M2_MiniTripod_Bag";
-        };    
+        };
 
         //Asst. Missile Specialist (AA)
         class soldier_AAA_F: Soldier_F {
@@ -200,11 +200,11 @@ class BWFleck {
                 LIST_2("SmokeShell")
             };
         };
-	    
-	//Gunner (HMG/GMG)
+
+        //Gunner (HMG/GMG)
         class support_MG_F: Soldier_F {
             backpack = "RHS_M2_Gun_Bag";
-        };      
+        };
 
         //Marksman
         class soldier_M_F: Soldier_F {
