@@ -111,34 +111,38 @@ Sergeant and above | Surgeon loadout. Arm-leg-kit for broken limbs and more sali
 
 ### Units
 
-Of the aforementioned factions, only the following unit types have a loadout:
+Of the aforementioned factions, only the following unit types have a loadout. Note that the editors unit description doesn not 100% match the actual functionality of the units within these loadouts.
 
-English                       | Deutsch                                  | Function
-------------------------------|------------------------------------------|----------------------------------------
-Asst. Autorifleman            | Zweiter Automatik Schütze                | Munitionsträger für LMG
-Asst. Gunner (HMG/GMG)        | Zweiter Schütze (Mk30/GMG)               | Munitionsträger für MMG
-Asst. Missile Specialist (AA) | Zweiter Raketenspezialist (Luftabwehr)   | Munitionsträger für Luftabwehrschütze
-Asst. Missile Specialist (AT) | Zweiter Raketenspezialist (Panzerabwehr) | Munitionsträger für Panzerabwehrschütze
-Autorifleman                  | Automatik-Schütze                        | LMG Schütze
-Combat Life Saver             | Sanitäter                                | Sanitäter
-Explosive Specialist          | Sprengmeister                            | Sprengmeister
-Grenadier                     | Grenadier                                | Grenadier
-Heavy Gunner                  | Schwerer Schütze                         | MMG Schütze
-Marksman                      | Scharfschütze (nicht DLC)                | Gruppenscharfschütze (DMR)
-Missile Specialist (AA)       | Raketenspezialist (Luftabwehr)           | Luftabwehrschütze
-Missile Specialist (AT)       | Raketenspezialist (Panzerabwehr)         | Panzerabwehrschütze
-Repair Specialist             | Reparaturspezialist                      | Reparaturspezialist
-Rifleman                      | Schütze                                  | Schütze
-Rifleman (AT)                 | Schütze (Panzerabwehr)                   | Schütze mit leichter AT-Waffe
-Squad Leader                  | Truppführer                              | Truppführer
-Team Leader                   | Teamleader                               | Gruppenführer und Zugführer
+
+Unit Description (in Editor)  | Unit Classname   | Function                      | Funktion (Deutsch)
+------------------------------|------------------|-------------------------------|----------------------------------------
+Squad Leader                  | Soldier_SL_F     | Squad Leader                  | Gruppenführer und Zugführer
+Team Leader                   | Soldier_TL_F     | Fireteam Leader               | Truppführer
+Rifleman                      | Soldier_F        | Rifleman                      | Schütze
+Rifleman (AT)                 | soldier_LAT_F    | Light AT                      | Schütze mit leichter AT-Waffe
+Autorifleman                  | soldier_AR_F     | LMG Gunner                    | LMG Schütze
+Asst. Autorifleman            | soldier_AAR_F    | LMG Assistant                 | LMG Assistent
+Heavy Gunner                  | HeavyGunner_F    | MMG Gunner                    | MMG Schütze
+Ammo Bearer                   | soldier_A_F      | MMG Assistant                 | MMG Assistent
+Gunner (HMG/GMG)              | support_MG_F     | HMG Gunner                    | HMG Schütze
+Asst. Gunner (HMG/GMG)        | support_AMG_F    | HMG Assistant                 | HMG Assistent
+Missile Specialist (AA)       | soldier_AA_F     | AA Specialist                 | Luftabwehrschütze
+Asst. Missile Specialist (AA) | soldier_AAA_F    | Ammo Bearer for AA Specialist | Munitionsträger für Luftabwehrschütze
+Missile Specialist (AT)       | soldier_AT_F     | AT Specialist                 | Panzerabwehrschütze
+Asst. Missile Specialist (AT) | soldier_AAT_F    | Ammo Bearer for AT Specialist | Munitionsträger für Panzerabwehrschütze
+Grenadier                     | Soldier_GL_F     | Grenadier                     | Grenadier
+Combat Life Saver             | medic_F          | Medic (rank-dependent)        | Sanitäter (rangabhängig)
+Explosive Specialist          | soldier_exp_F    | Explosive Specialist          | Sprengmeister
+Repair Specialist             | soldier_repair_F | Repair Specialist             | Reparaturspezialist
+Marksman                      | soldier_M_F      | Designated Marksman           | Gruppenscharfschütze
 
 And currently only for the Russian factions:
 
-English | Deutsch | Function
---------|---------|---------
-Sniper  | Sniper  | Sniper
-Spotter | Spotter | Spotter
+Unit Description (in Editor) | Unit Classname | Function | Funktion (Deutsch)
+-----------------------------|----------------|----------|-------------------
+Sniper                       | sniper_F       | Sniper   | Scharfschütze
+Spotter                      | spotter_F      | Spotter  | Spotter
+
 
 
 --------------------------------------------------------------------------------
