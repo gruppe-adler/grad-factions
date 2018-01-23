@@ -165,7 +165,7 @@ class Taliban {
             uniform = "LOP_U_AM_Fatigue_01";
             primaryWeapon = "rhs_weap_svdp";
             primaryWeaponMagazine = "rhs_10Rnd_762x54mmR_7N1";
-            primaryWeaponAttachments[] = {"rhs_acc_pso1m21"};
+            primaryWeaponOptics = "rhs_acc_pso1m21";
             addItemsToVest[] = {
                 LIST_2("rhs_mag_rgd5"),
                 LIST_10("rhs_10Rnd_762x54mmR_7N1")
