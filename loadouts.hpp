@@ -12,6 +12,7 @@
 #include "factions\SOGBlack.hpp"
 #include "factions\UsmcVietnam.hpp"
 #include "factions\Vietcong.hpp"
+#include "factions\SWAT.hpp"
 
 //deprecated:
 /*#include "factions\ModerateRebels.hpp"*/
