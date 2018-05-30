@@ -114,6 +114,8 @@ class Taliban {
         };
 
         //Combat Life Saver
+        //Kein Loadout über Medicloadout, die Tasche ist zu klein!
+        //Das ist gewollt.
         class medic_F: Soldier_F {
             uniform = "LOP_U_AM_Fatigue_02";
     		    headgear = "rds_Villager_cap2";
