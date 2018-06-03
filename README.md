@@ -98,6 +98,7 @@ These factions are available (see also the `factions` directory):
 | SOGBlack    | CIA Special Operations Group | Synch  |
 | UsmcVietnam | Vietnam-Era USMC             | Eras   |
 | Vietcong    | Vietnamese Guerilla          | Eras   |
+| SWAT        | US SWAT                      | Eras   |
 
 
 ### Rank Dependent Loadout
