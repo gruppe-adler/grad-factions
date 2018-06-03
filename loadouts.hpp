@@ -13,9 +13,9 @@
 #include "factions\UsmcVietnam.hpp"
 #include "factions\Vietcong.hpp"
 #include "factions\SWAT.hpp"
+#include "factions\Taliban.hpp"
 
 //deprecated:
 /*#include "factions\ModerateRebels.hpp"*/
 /*#include "factions\Peshmerga.hpp"*/
 /*#include "factions\RuMedit.hpp"*/
-/*#include "factions\Taliban.hpp"*/
