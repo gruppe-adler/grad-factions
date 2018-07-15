@@ -320,7 +320,7 @@ class UsmcVietnam {
         };
 
 		class Helipilot_F: Soldier_F {
-			headgear = "rhssaf_helmet_hgu56p";
+			headgear = "rhsusf_hgu56p_visor";
 			backpack = "tf_rt1523g_black";
 			binoculars = "Binocular";
 			addItemsToBackpack[] = {
