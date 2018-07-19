@@ -304,6 +304,31 @@ class IsraeliDefenseForce {
                 LIST_2("1Rnd_HE_Grenade_shell")
             };
         };
+
+        //Mortar
+        class support_Mort_F: Soldier_F {
+            primaryWeapon = "rhs_weap_m4a1_m203";
+			backpack = "TFAR_rt1523g_sage";
+            headgear = "rhsusf_ach_bare_headset_ess";
+            vest = "rhsgref_otv_khaki";
+            addItemsToVest[] = {
+                LIST_2("HandGrenade"),
+                LIST_2("SmokeShell"),
+                LIST_2("rhsusf_mag_17Rnd_9x19_JHP"),
+                LIST_8("30Rnd_556x45_Stanag"),
+                LIST_2("1Rnd_SmokeRed_Grenade_shell"),
+                LIST_2("1Rnd_Smoke_Grenade_shell"),
+                LIST_2("1Rnd_SmokeBlue_Grenade_shell"),
+                LIST_2("1Rnd_HE_Grenade_shell")
+            };
+        };		
+		
+        //Ass. Mortar
+        class support_AMort_F: Soldier_F {
+			backpack = "B_Kitbag_rgr";
+            headgear = "rhsusf_ach_bare_headset_ess";
+            vest = "rhsgref_otv_khaki";
+        };
     };
     class Rank {
         class LIEUTENANT {
