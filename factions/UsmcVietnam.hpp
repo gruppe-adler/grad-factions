@@ -62,8 +62,8 @@ class UsmcVietnam {
                 LIST_2("ACE_epinephrine")
             };
             addItemsToVest[] = {
-                LIST_2("HandGrenade"),
-                LIST_2("SmokeShell"),
+                LIST_1("HandGrenade"),
+                LIST_1("SmokeShell"),
                 LIST_1("rhsusf_mag_7x45acp_MHP"),
                 LIST_7("rhs_mag_30Rnd_556x45_Mk318_Stanag")
             };
@@ -326,7 +326,7 @@ class UsmcVietnam {
         };
 
 		class Helipilot_F: Soldier_F {
-			headgear = "rhssaf_helmet_hgu56p";
+			headgear = "rhsusf_hgu56p_green";
 			backpack = "tf_rt1523g_black";
 			binoculars = "Binocular";
 			addItemsToBackpack[] = {
