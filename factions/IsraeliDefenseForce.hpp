@@ -62,7 +62,7 @@ class IsraeliDefenseForce {
                 LIST_2("ACE_epinephrine")
             };
             addItemsToVest[] = {
-                LIST_1("HandGrenade"),
+                LIST_2("HandGrenade"),
                 LIST_2("SmokeShell"),
                 LIST_2("rhsusf_mag_17Rnd_9x19_JHP"),
                 LIST_7("30Rnd_556x45_Stanag")
