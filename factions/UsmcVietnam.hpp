@@ -20,7 +20,7 @@
   #define SUPPRESSORITEM "muzzle_snds_B_khk_F"
 #endif
 
-class SPECOPSVietnam {
+class UsmcVietnam {
 	class AllUnits {
 		uniform = "rhsgref_uniform_olive";
 		vest = "rhsgref_alice_webbing";

@@ -16,6 +16,7 @@
 #include "factions\SWAT.hpp"
 #include "factions\Taliban.hpp"
 #include "factions\IsraeliDefenseForce.hpp"
+#include "factions\SOCOMVietnam.hpp"
 
 //deprecated:
 /*#include "factions\ModerateRebels.hpp"*/
