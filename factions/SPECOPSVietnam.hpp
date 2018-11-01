@@ -22,10 +22,10 @@
 
 class SPECOPSVietnam {
 	class AllUnits {
-		uniform = "rhsgref_uniform_olive";
+		uniform = "rhsgref_uniform_tigerstripe";
 		vest = "rhsgref_alice_webbing";
 		backpack = "";
-		headgear = "rhsgref_helmet_M1_bare";
+		headgear = "H_Booniehat_oli";
 		primaryWeapon = "rhs_weap_m16a4_carryhandle";
         	primaryWeaponMagazine = "rhs_mag_30Rnd_556x45_Mk318_Stanag";
 		primaryWeaponOptics = "";
