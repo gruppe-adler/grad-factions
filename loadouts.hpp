@@ -11,12 +11,12 @@
 #include "factions\RuEMR.hpp"
 #include "factions\SOGBlack.hpp"
 #include "factions\UsmcVietnam.hpp"
-#include "factions\SPECOPSVietnam.hpp"
+#include "factions\SOCOMVietnam.hpp"
 #include "factions\Vietcong.hpp"
 #include "factions\SWAT.hpp"
 #include "factions\Taliban.hpp"
 #include "factions\IsraeliDefenseForce.hpp"
-#include "factions\SOCOMVietnam.hpp"
+
 
 //deprecated:
 /*#include "factions\ModerateRebels.hpp"*/

@@ -26,7 +26,6 @@ class SOCOMVietnam: UsmcVietnam {
         headgear = "H_Booniehat_oli";
     };
 	class Type: Type {
-	class Type: Type {
         class Soldier_F: Soldier_F {};
         class soldier_AAR_F: soldier_AAR_F {};
         class soldier_A_F: soldier_A_F {};
