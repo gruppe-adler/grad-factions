@@ -53,4 +53,3 @@ class SOCOMVietnam: UsmcVietnam {
         class LIEUTENANT: LIEUTENANT {};
     };
 };
-
