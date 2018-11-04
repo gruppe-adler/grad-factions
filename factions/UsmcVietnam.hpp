@@ -27,16 +27,16 @@ class UsmcVietnam {
         backpack = "";
         headgear = "rhsgref_helmet_M1_bare";
         primaryWeapon = "rhs_weap_m16a4_carryhandle";
-            primaryWeaponMagazine = "rhs_mag_30Rnd_556x45_Mk318_Stanag";
+        primaryWeaponMagazine = "rhs_mag_30Rnd_556x45_Mk318_Stanag";
         primaryWeaponOptics = "";
         primaryWeaponPointer = LLITEM;
         primaryWeaponMuzzle = SUPPRESSORITEM;
-            primaryWeaponUnderbarrel = "";
+        primaryWeaponUnderbarrel = "";
         primaryWeaponUnderbarrelMagazine = "";
-            secondaryWeapon = "";
-            secondaryWeaponMagazine = "";
+        secondaryWeapon = "";
+        secondaryWeaponMagazine = "";
         handgunWeapon = "";
-            handgunWeaponMagazine = "";
+        handgunWeaponMagazine = "";
         binoculars = "";
         map = "ItemMap";
         compass = "ItemCompass";
@@ -161,7 +161,7 @@ class UsmcVietnam {
         class soldier_exp_F: Soldier_F {
             headgear = "H_Bandanna_blu";
             handgunWeapon = "ACE_VMH3";
-                handgunWeaponMagazine = "";
+            handgunWeaponMagazine = "";
             backpack = "rhsgref_hidf_alicepack";
             addItemsToBackpack[] = {
                 "ACE_Clacker",
@@ -176,6 +176,7 @@ class UsmcVietnam {
             headgear = "H_Booniehat_oli";
             backpack = "rhsgref_hidf_alicepack";
             primaryWeapon = "rhs_weap_m3a1";
+            primaryWeaponMagazine = "rhsgref_30rnd_1143x23_M1T_2mag_SMG";
             addItemsToVest[] = {
                 LIST_2("rhs_mag_m67"),
                 LIST_8("rhsgref_30rnd_1143x23_M1T_2mag_SMG")
@@ -226,10 +227,12 @@ class UsmcVietnam {
             primaryWeaponMagazine = "20Rnd_762x51_Mag";
             primaryWeaponOptics ="optic_KHS_old";
             primaryWeaponUnderbarrel ="";
+            handgunWeapon = "rhsusf_weap_m1911a1";
+            handgunWeaponMagazine = "rhsusf_mag_7x45acp_MHP";
             binoculars = "Binocular";
             addItemsToVest[] = {
                 LIST_2("rhsusf_mag_7x45acp_MHP")
-                };
+            };
             backpack = "rhsgref_hidf_alicepack";
             addItemsToBackpack[] = {
                 LIST_8("20Rnd_762x51_Mag"),
