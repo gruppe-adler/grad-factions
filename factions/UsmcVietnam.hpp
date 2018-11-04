@@ -171,27 +171,30 @@ class UsmcVietnam {
             };
         };
 
-        //Grenadier
+		//Grenadier
         class Soldier_GL_F: Soldier_F {
-			headgear = "H_Booniehat_oli";
-			backpack = "rhsgref_hidf_alicepack";
+            headgear = "H_Booniehat_oli";
+            backpack = "rhsgref_hidf_alicepack";
             primaryWeapon = "rhs_weap_m3a1";
             addItemsToVest[] = {
                 LIST_2("rhs_mag_m67"),
                 LIST_8("rhsgref_30rnd_1143x23_M1T_2mag_SMG")
             };
-			addItemsToBackpack[] = {
-			LIST_1("rhs_weap_m79"),	
-			LIST_8("rhs_mag_M433_HEDP"),
-            LIST_3("1Rnd_SmokeRed_Grenade_shell"),
-			LIST_2("1Rnd_Smoke_Grenade_shell"),
-            LIST_2("1Rnd_SmokeGreen_Grenade_shell"),
-            LIST_2("1Rnd_SmokeBlue_Grenade_shell"),
-			LIST_2("UGL_FlareWhite_F"),
-			LIST_2("UGL_FlareGreen_F"),
-			LIST_2("UGL_FlareRed_F"),
-			LIST_2("UGL_FlareYellow_F")
-	        };
+            addItemsToBackpack[] = {
+				"rhs_weap_m79",
+				LIST_8("rhs_mag_M433_HEDP"),
+				LIST_3("1Rnd_SmokeRed_Grenade_shell"),
+				LIST_2("1Rnd_Smoke_Grenade_shell"),
+				LIST_2("1Rnd_SmokeGreen_Grenade_shell"),
+				LIST_2("1Rnd_SmokeBlue_Grenade_shell"),
+				LIST_2("UGL_FlareWhite_F"),
+				LIST_2("UGL_FlareGreen_F"),
+				LIST_2("UGL_FlareRed_F"),
+				LIST_2("UGL_FlareYellow_F")
+            };
+            class rhs_weap_m79 {
+                magazine = "rhs_mag_M433_HEDP";
+            };
         };
 
         //Heavy Gunner (MMG)
