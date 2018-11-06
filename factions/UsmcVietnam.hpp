@@ -295,7 +295,7 @@ class UsmcVietnam {
                 LIST_2("SmokeShellRed"),
                 LIST_2("SmokeShellYellow"),
                 LIST_2("SmokeShell"),
-                LIST_2("hgun_Pistol_Signal_F"),
+                LIST_1("hgun_Pistol_Signal_F"),
                 LIST_1("6Rnd_GreenSignal_F"),
                 LIST_1("6Rnd_RedSignal_F")
             };
@@ -375,7 +375,7 @@ class UsmcVietnam {
                 LIST_2("SmokeShellRed"),
                 LIST_2("SmokeShellYellow"),
                 LIST_2("SmokeShell"),
-                LIST_2("hgun_Pistol_Signal_F"),
+                LIST_1("hgun_Pistol_Signal_F"),
                 LIST_1("6Rnd_GreenSignal_F"),
                 LIST_1("6Rnd_RedSignal_F")
             };
