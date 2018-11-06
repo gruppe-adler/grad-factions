@@ -320,6 +320,7 @@ class UsmcVietnam {
             };
         };
 
+		//Officer
         class officer_F: Soldier_F {
             headgear = "rhssaf_beret_red";
             backpack = "rhsgref_hidf_alicepack";
@@ -338,6 +339,7 @@ class UsmcVietnam {
             };
         };
 
+		//Helipilot
         class Helipilot_F: Soldier_F {
             headgear = "rhsusf_hgu56p_green";
             backpack = "tf_rt1523g_black";
@@ -359,6 +361,7 @@ class UsmcVietnam {
         };
     };
 
+	//Boss
     class Rank {
         class LIEUTENANT {
             headgear = "rhssaf_beret_red";
