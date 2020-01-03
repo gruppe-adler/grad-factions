@@ -33,7 +33,7 @@ addItemsToBackpack[] = { \
 #define GRAD_FACTIONS_MEDICITEMS_PT \
 addItemsToUniform[] = { \
     "ACE_surgicalKit", \
-    "GRAD_ALK" \
+    "ACE_splint" \
 }; \
 addItemsToBackpack[] = { \
     LIST_4("ACE_salineIV"), \
