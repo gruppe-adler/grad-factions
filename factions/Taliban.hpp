@@ -53,7 +53,8 @@ class Taliban {
               LIST_8("ACE_fieldDressing"),
               LIST_4("ACE_quikclot"),
               LIST_4("ACE_morphine"),
-              "ACE_Flashlight_KSF1"
+              "ACE_Flashlight_KSF1",
+              LIST_4("ACE_splint")
             };
             addItemsToVest[] = {
                 LIST_4("rhs_30Rnd_762x39mm"),

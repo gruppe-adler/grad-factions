@@ -61,7 +61,8 @@ class Vietcong {
                 LIST_4("ACE_quikclot"),
                 LIST_4("ACE_tourniquet"),
                 LIST_2("ACE_morphine"),
-                LIST_2("ACE_epinephrine")
+                LIST_2("ACE_epinephrine"),
+                LIST_4("ACE_splint")
             };
             addItemsToVest[] = {
                 LIST_2("rhs_mag_rgd5"),
