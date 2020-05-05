@@ -81,7 +81,7 @@ Here we will give the vanilla NATO units Bundeswehr loadouts, specifically *BwFl
 **NOTE**: Loadouts are not guaranteed to work with units provided by Mods. If you need a specific mod supported, open an issue with [grad-loadout](https://github.com/gruppe-adler/grad-loadout).
 
 ### Macros
-PICK_BY_GM(var1,var2)   - Will pick an Item, depending on if GM DLC is available(var1) or not(var2)
+__EVAL(PICK_BY_GM(var1,var2))   - Will pick an Item, depending on if GM DLC is available(var1) or not(var2)
 LIST_N(var1)            - Will add N(Number from 1 to 30) of given Item(var1)                  
 
 ### Available Loadout Factions
