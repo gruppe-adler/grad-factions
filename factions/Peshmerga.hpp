@@ -99,6 +99,7 @@ class Peshmerga {
             primaryWeapon = "UK3CB_RPK_74N";
             primaryWeaponMagazine = "UK3CB_RPK74_60rnd_545x39";
             primaryWeaponOptics = "rhs_acc_1p29";
+            backpack = "UK3CB_B_Alice_K";
             addItemsToBackpack[] = {
                 LIST_3("UK3CB_RPK74_60rnd_545x39")
             };
@@ -106,6 +107,7 @@ class Peshmerga {
 
         //Combat Life Saver
         class medic_F: Soldier_F {
+            backpack = "UK3CB_B_Alice_K";
             addItemsToUniform[] = {
                 LIST_1("ACE_MapTools"),
                 LIST_1("ACE_DefusalKit"),
@@ -137,6 +139,7 @@ class Peshmerga {
 
         //Explosive Specialist
         class soldier_exp_F: Soldier_F {
+            backpack = "UK3CB_B_Alice_K";
             addItemsToBackpack[] = {
                 "ACE_Clacker",
                 "ACE_M26_Clacker",
