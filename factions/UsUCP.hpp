@@ -76,7 +76,6 @@ class USUCP: USOCP {
         };
         class soldier_LAT_F: soldier_LAT_F {};
         class Soldier_SL_F: Soldier_SL_F {
-            backpack = "TFAR_rt1523g_sage";
             headgear = "rhsusf_ach_helmet_headset_ucp";
             vest = "rhsusf_iotv_ucp_Squadleader";
         };
