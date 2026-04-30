@@ -12,10 +12,13 @@
         },
         {
             "name": "Salbei"
+        },
+        {
+            "name": "Willard"
         }
     ],
     "description": "Various faction loadouts for grad-loadout",
-    "version": "4.0.0",
+    "version": "4.0.1",
     "dependencies": {
         "grad-loadout": ">4.7.0"
     }
